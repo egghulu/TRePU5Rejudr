@@ -323,7 +323,7 @@ if( $('.countdown').length ) {
         timezone: "Europe/London",
         format: "dd:hh:mm:ss",
         twoDigits: 'on',
-        serverDateSource: "php/dateandtime.php",
+        // serverDateSource: "php/dateandtime.php",
         fallback: function() {console.log("Count finished!")}
     });
 }
