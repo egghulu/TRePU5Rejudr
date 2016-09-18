@@ -323,7 +323,7 @@ if( $('.countdown').length ) {
         timezone: "Europe/London",
         format: "dd:hh:mm:ss",
         twoDigits: 'on',
-        // serverDateSource: "php/dateandtime.php",
+        serverDateSource: "http://capullo-backend-api.herokuapp.com/dateandtime/",
         fallback: function() {console.log("Count finished!")}
     });
 }
