@@ -20,7 +20,7 @@
        STYLESHEETS 
     ****************************** -->
     
-
+    
     <!-- inject:css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -39,6 +39,7 @@
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="css/responsive.css">
 
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,30 +53,81 @@
 <body data-spy="scroll" data-target="#main-navbar">
 
     <!-- Preloader -->
-    <!--
+   <!--
     <div class="loader background-white">
         <div class="loader-inner ball-scale-ripple-multiple vh-center">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>
-    -->
+    </div> -->
+    
 
     <div class="main-container" id="page">
 
-        
        <!-- *************************
-           VIDEO
+            HEADER 
         ****************************** -->
-        <section id="video" class="padding-y-lg background-video video-play">
+        <header id="navigation">
             
+            <!-- Top Bar -->
+            <section class="top-bar background-edit">
+                <div class="container padding-l-0">
+                    <!-- Working Hours -->
+                    <div class="schedule text-edit">
+                        <i class="icon-clock2"></i> <span>Launching:</span> Thu 15, September 2017
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="contact-info text-edit">
+                        <div class="email margin-r-lg"><i class="icon-envelope"></i><a href="mailto:info@yourmail.com">contact@email.com</a></div>
+                        <div class="phone"><i class="icon-phone3"></i><span>Call us at:</span> (+62) 896 84876 455</div>
+                    </div>
+                </div><!-- /End Container -->
+            </section>
+                    
+
+            <nav class="navbar nav-2 background-edit affix-top" id="main-navbar">
+                <div class="container">
+                    
+                    <div class="navbar-header">
+                        <!-- Menu Button for Mobile Devices -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                       
+                        <a href="" class="navbar-brand smooth-scroll"><img src="images/logo-small.png" alt=""></a>
+                        
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <!-- Menu Links -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#features" class="smooth-scroll">About</a></li>
+                            <li><a href="#team" class="smooth-scroll">Team</a></li>
+                            <li><a href="#social" class="smooth-scroll">Contact</a></li>
+                        </ul>
+                    </div><!-- /End Navbar Collapse -->
+
+                </div><!-- /End Container -->
+            </nav><!-- /End Nav -->
+        </header>
+
+<!-- *************************
+             HERO SECTION
+        ****************************** -->
+        <section id="hero" class="hero hero-countdown background-img" style="background-image:url('images/hero-abstract.svg');">
             
-            <div class="container padding-y-lg">
+                        
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-			<h1 class="text-white">Something really good is coming very soon</h1>
-			
+                        <h1 class="text-white">Something really good is coming very soon</h1>
+                        
                         <!-- Countdown Timer -->
                         <div class="countdown text-white padding-y-md">
                             <div class="timer">
@@ -95,7 +147,9 @@
                                 <em class="textSeconds">seconds</em> 
                             </div>
                         </div>
-                        <a class="mp-iframe watch-video inverse font-weight-900" href="https://www.youtube.com/watch?v=EbKyRETtk78"><i class="fa fa-play-circle"></i>Watch the video</a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 text-white text-center">
+                        <p>We're making something unique, simple and creative coming soon page to impress your visitor.</p>
                     </div>
                 </div><!-- /End Row -->
             </div><!-- /End Container -->
@@ -113,7 +167,6 @@
                     <div class="col-md-6">
                         <div style="visibility: visible; animation-name: zoomIn;" class="text-center margin-b-md wow zoomIn">
                             <h4>Subscribe to our Updates</h4>
-                            
                         </div>
                     </div>
                     <!-- Subscription Form -->
@@ -125,7 +178,7 @@
                             </div>
                             <button type="submit" class="btn btn-shadow btn-blue">Subscribe</button>
                         </form>
- 
+
                     </div>
                 </div><!-- /End Row -->
             </div><!-- /End Container -->
@@ -135,7 +188,7 @@
         <!-- *************************
            FEATURES SECTION 
         ****************************** -->
-        <section id="features" class="padding-y-lg background-edit background-dark">
+        <section id="features" class="padding-y-lg background-edit background-blue">
             <div class="container">
                 <!-- Section Header -->
                 <div class="row">
@@ -290,7 +343,7 @@
         <!-- *************************
            SOCIAL WIDGET
         ****************************** -->
-        <section id="social" class="padding-y-lg background-img" style="background-image:url('images/footer-background.jpg')">
+        <section id="social" class="padding-y-lg background-img" style="background-image:url('images/footer-abstract.svg')">
             
             
             <div class="container">
@@ -346,13 +399,13 @@
             </div><!-- /End Container -->
         </footer></div><!-- /End Main Container -->
 
- 
+    
 
 
    <!-- *************************
          SCRIPTS 
     ****************************** -->
-    
+   
     <!-- inject:js -->
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -367,11 +420,13 @@
     <script src="js/typed.js"></script>
     <script src="js/wow.js"></script>
     <!-- endinject -->
-
+    
     <script src="js/picker.js"></script>
     <script src="js/picker.date.js"></script>
    
     <!-- Custom Script -->
     <script src="js/custom.js"></script>
+
+    
 
 </body></html>
