@@ -1,0 +1,155 @@
+/* #Media Queries
+================================================== */
+
+@media only screen and (max-width: 1024px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+    /*homepage*/
+    .homepage {
+        margin-top: 0 !important;
+    }
+    #slider.fullscreen .flex-control-thumbs {
+        max-width: 100%;
+    }
+    .facilities-img {
+        width: 100%;
+    }
+    .facilities-detail {
+        width: 100%;
+        padding: 80px 2% 80px 3%;
+    }
+
+    /*pagetitle*/
+    .page-title .title {
+        padding-top: 15%;
+    }
+
+    .sidebar {
+        margin-top: 80px;
+    }
+
+    .widget .widget-agent-img {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+    /*blog*/
+    .blog .blog-post img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+    /*menu*/
+    #main-menu {
+        display: none;
+    }
+    #header .mobile-menu {
+        display: block;
+        float: right;
+        padding: 10px 25px 25px;
+    }
+    .c-menu--slide-right {
+        width: 300px;
+        height: 100%;
+    }
+    .menus-mobile ul.child {
+        display: none;
+        -webkit-transition: all 0.6s ease 0s;
+           -moz-transition: all 0.6s ease 0s;
+            -ms-transition: all 0.6s ease 0s;
+             -o-transition: all 0.6s ease 0s;
+                transition: all 0.6s ease 0s;
+    }
+    .menus-mobile li.has-child:hover > ul.child {
+        display: block;
+    }
+    /*homepage*/
+    #slider.fullscreen .flex-control-thumbs {
+        margin-top: -70px;
+    }
+    .slider-form {
+        display: none;
+    }
+    .facilities .facilities-img, .facilities .facilities-detail {
+        width: 100%;
+    }
+    .gallery .gallery-item img {
+        width: 100%;
+    }
+    .features .features-item {
+        width: 20%;
+        float: left;
+    }
+    /*pagetitle*/
+    .page-title .title {
+        padding-top: 20%;
+    }
+    /*contact*/
+    .agent-img {
+        width: 100%;
+    }
+    .agent-detail {
+        width: 100%;
+        padding: 80px 2% 80px 3%;
+    }
+    .form {
+        width: 100%;
+        padding: 80px 3% 80px 2%;
+    }
+    .maps {
+        width: 100%;
+    }
+    .maps iframe {
+        height: 300px;
+    }
+    .room-slider {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .features .features-item {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /*pagetitle*/
+    .page-title .title {
+        padding-top: 30%;
+    }
+    .grid figcaption h2 {
+        -webkit-transform: translateY(60px);
+        transform: translateY(60px);
+    }
+    /*facilities*/
+    .facilities-item {
+        width: 100%;
+    }
+}
+@media all and (max-width: 320px) {
+    .c-menu--slide-right {
+        width: 250px;
+    }
+    .c-menu--slide-right {
+        -webkit-transform: translateX(250px);
+        -ms-transform: translateX(250px);
+        transform: translateX(250px);
+    }
+    /*pagetitle*/
+    .page-title .title {
+        padding-top: 45%;
+    }
+    .page-title .title h2 {
+        font-size: 28px;
+    }
+}

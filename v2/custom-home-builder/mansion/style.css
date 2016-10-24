@@ -1,0 +1,523 @@
+@charset "utf-8";
+
+@import url("css/css3.css"); /* import custom font and shadow effects */
+
+
+html { 
+	
+	/*background: url(img/body_noise.gif) repeat; */
+} 
+
+
+body {
+	color:#ccc;
+	font-family: "Fontin Sans", serif;
+
+}
+
+/* STYLING NAVIGATION BAR */
+
+.navigation-area {
+    background-image: url(img/navigation-container.jpg);
+    background-repeat: repeat-x;
+	z-index:200;
+}
+
+.top-bar {
+    background:black;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+
+.name a {
+	font-family: 'Fontin Sans', 'Georgia', serif;
+	text-transform:uppercase;
+	font-size:1.3em;
+	letter-spacing:0.3em;
+	color:white;
+	position:relative;
+	font-weight:bold;
+	top:10px;
+	left:10px;
+}
+
+.top-bar-section ul {
+
+    background:black;
+    text-transform: uppercase;
+	
+}
+
+/** Single  menu item **/
+.top-bar-section li a:not(.button) {
+
+	font-family: 'Fontin', sans-serif;
+	letter-spacing:0.2em;
+    background:black;
+    line-height: 48px;
+    padding: 0 25px;
+}
+
+/* resets some colors when browser shrinks  */
+@media only screen and (max-width: 942px) {
+	.top-bar ul {
+        background-color: black;
+        padding-bottom: 3px;
+    }
+	 /* Change non active menu item color to white */
+    .top-bar-section ul li > a {
+        color: #fff;
+    }
+    /* Gives the dropdown ul a black fill */
+    .top-bar-section ul {
+        background: #000;
+    }
+	
+	/* Give the BACK button after going in a submenu the appropriate filling */
+    .top-bar-section .dropdown li.title h5 a {
+        line-height: 47px;
+    }
+    /* This fixes the position and the color of the dropdown arrow */
+    .top-bar-section .has-dropdown > a:after {
+        border-color: rgba(255, 255, 255, 1) transparent transparent;
+        margin-top: 2.5px;
+    }
+
+} /* end media query */
+/* END OF NAVIGATION STYLING */
+
+
+
+/* BASIC TYPOGRAPHY */
+
+h1, h3, h4, h5, h6 {
+	font-family: 'Fontin Bold', 'Arial', 'Helvetica',  sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-transform:uppercase;
+	letter-spacing:0.4em;
+}
+
+h2 {
+	font-family: 'Pinyon Script', 'Georgia', cursive;
+	font-size:2em;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	position:relative;
+	top:-5px;
+	opacity:0.6;
+	text-align:center;
+}
+
+h3{	
+	font-family: 'Fontin', serif;
+	text-transform:none;
+	letter-spacing:normal;
+}
+
+h4, h6{
+	font-family: 'Fontin SC', serif;
+	text-transform: none;
+	font-variant: normal;
+	letter-spacing:normal;
+	margin-bottom: 3px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color:#fff;
+}
+
+a{
+	color: #fff;
+	text-decoration:none;
+	outline: 0;
+}
+
+a:hover{
+	color:#e79621;
+}
+
+/*remove hash from location string */
+
+a[href="javascript:"]:after, a[href="#"]:after {
+    content: "";
+
+}
+
+/* BASIC LAYOUT */
+
+.section {
+	position:relative;
+	padding-top:100px;
+	min-height:600px;
+	
+}
+
+#home {
+	position:relative;
+	padding-top:0;
+	width:100%;
+	
+}
+
+
+/* slider */
+ol.orbit-bullets {
+	
+	margin:0;
+	padding:0;
+	position:relative;
+	left: 50%;
+	margin-left: -2%;
+	top:-50px;
+	z-index:190;
+	height: 35px;
+	width:100%;
+	text-align: center;
+
+}
+
+@media only screen and (max-width: 942px) {
+	ol.orbit-bullets {
+	top:-40px;
+	margin-left:-40px;
+	}
+} /* end media query */
+/* END OF NAVIGATION STYLING */
+
+
+ol.orbit-bullets li {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 10px;
+	background: #fff;
+	background: rgba(150,150,150,0.8);
+	cursor: pointer;
+	box-shadow: 
+		0 1px 1px rgba(255,255,255,0.8), 
+		inset 0 1px 1px rgba(0,0,0,0.1);
+	}
+
+
+ol.orbit-bullets li.active, ol.orbit-bullets li:hover {
+
+	box-shadow: 
+			0 1px 1px rgba(255,255,255,0.8), 
+			inset 0 1px 1px rgba(0,0,0,0.1),
+			0 0 0 5px rgba(255,255,255,0.8);
+
+}
+
+ol.orbit-bullets li.active:after {
+
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 3px;
+	left: 3px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.8);
+
+}
+
+
+	
+/* this div is commented in the index.html, instead it's substituted 
+with orbit slider. If you want static header, uncomment logo div in index.html */
+
+#logo {
+	width:100%;
+	height:689px;
+	position:relative;
+	top:0;
+	margin:0 auto;
+	text-align:center;
+	background:url(img/header.jpg) no-repeat top center;
+
+}
+
+.welcome {
+	position: relative; 
+	margin:0 auto; 
+	width:60%;
+}
+
+@media only screen and (max-width: 942px) {
+	.welcome {
+	padding-top:10px;
+	}
+} /* end media query */
+/* END OF NAVIGATION STYLING */
+
+
+/* ABOUT */
+
+#about {
+	background:#7e8344;
+	color: #dbe195;
+
+}
+
+
+/* decorative divider for section title */
+
+.divider2 {
+	position:relative;
+	top:-5px;
+	width:149px; 
+	height:22px; 
+	display:block; 
+	background:url(img/divider_calligr.png) no-repeat; 
+	margin:0 auto; 
+	margin-bottom:50px;
+}
+
+
+
+
+/* ROOMS */
+
+#rooms {
+
+	background:#292929;
+	color: #b0a4a4;
+}
+
+
+
+.lined {
+	width:100%; 
+	padding-bottom:10px; 
+	border-bottom: 1px #5d5d5d solid; 
+	margin-bottom:10px; 
+}
+
+
+/* picture and text block that doesn't flow around image */
+
+.overflow {overflow: auto; word-wrap: break-word;}
+.image {float:left; max-width: 100%; height: auto; border:none;}
+.text {overflow: hidden; padding-left:20px; padding-top:4px}
+
+
+/* styling main tabs */
+
+a.mtabs {
+	padding:10px 30px 10px 30px !important;
+	background:black !important;
+	font-family: 'Fontin', sans-serif !important;
+	letter-spacing:0.2em !important;
+	color:#fff !important;
+	text-transform: uppercase !important;
+
+}
+dd.active a.mtabs {
+	background:#262626 !important;
+	color: #5e5e5e !important;
+}
+
+/* styling vertical tabs that change room images */
+
+a.itabs {
+	padding:0 !important;
+	background:none !important;
+	margin-bottom:15px;
+
+}
+
+a.imtabs {
+	padding:0 !important;
+	margin:0 !important;
+	background:none !important;
+	margin-right:15px !important;
+
+}
+
+.itabscontent {
+	padding:0 !important;
+	background:none !important;
+	margin-bottom:10px;
+}
+
+/* place thumbnails differently on small screen */
+@media only screen and (max-width: 942px) {
+	a.itabs {
+	padding:0 !important;
+	background:none !important;
+	float:left !important;
+	margin-right:15px;
+	}
+} /* end media query */
+/* END OF NAVIGATION STYLING */
+
+
+/* CONTACT */
+
+
+
+#contact {
+	
+	background:#3d4742;
+	color: #8ea599;
+	
+}
+
+
+.lined2 {
+	width:100%; 
+	padding-bottom:10px; 
+	border-bottom: 1px #5b6e64 solid; 
+	margin-bottom:10px; 
+}
+
+
+/* social icons */
+
+#social {
+	margin:0;
+	padding:0;
+	padding-bottom:20px;
+
+
+}
+.fb,.gl,.tw {
+	width: 34px; 
+	height: 34px;
+	display: block; 
+	cursor: pointer; 
+	text-indent: -9999px;
+	outline:0;
+
+}
+
+.fb {
+	background: url(img/fb_ico.png) no-repeat 0 0;
+}
+
+.gl {
+	background: url(img/gl_ico.png) no-repeat 0 0;
+}
+
+.tw {
+	background: url(img/tw_ico.png) no-repeat 0 0;
+}
+
+.fb:hover, .gl:hover, .tw:hover {
+	background-position: 0 -31px;
+}
+
+/* forms */
+
+
+fieldset {
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+
+
+.button {
+	padding:10px;
+	padding-left:25px;
+	padding-right:25px;
+
+
+}
+/*
+.button:hover{
+	background:#643a1f url(img/fieldbg.png) repeat-x top;
+	background: rgba(0,0,0,.25) url(img/fieldbg.png) repeat-x top;
+	color:#cf804f;
+}
+*/
+
+#contactform label {
+	
+	display: block;
+	margin: 0 0 4px 0;
+	color: #8ea599;
+
+}
+
+
+#contactform input, #contactform textarea {
+
+	position:relative;
+	top:10px;
+	border:none;
+	color:#8ea599;
+	outline:none;
+	background:#643a1f url(img/fieldbg.png) repeat-x top;
+	background: rgba(0,0,0,.25) url(img/fieldbg.png) repeat-x top;
+	border-bottom: 1px solid #5b6d64;
+	border-right: 1px solid #5b6d64;
+	display:block;
+	
+
+}
+
+
+.wrapper {
+	background: #432516;
+	background: rgba(0,0,0,.10);
+	
+
+}
+
+
+/* AUX STYLES USED THROUGHOUT THE SITE  */
+
+.bold {font-family: 'Fontin Bold', 'Georgia', serif; font-weight:bold}
+.script {font-family: 'Pinyon Script', 'Georgia', cursive;}
+.italic {font-style:italic;}
+.smallcaps {font-variant:small-caps; letter-spacing:1px; font-family: 'Fontin SC'; }
+.sans-serif {font-family: 'Arial', 'Helvetica', sans-serif;}
+.nocaps {text-transform:none;}
+.bigger {font-size:1.3em;}
+.big {font-size:2em;}
+.small {font-size:0.9em; line-height:1.6em;}
+.smallest {font-size:0.8em;}
+.lheight {line-height:1.3em;}
+.normal {letter-spacing:normal; font-weight:normal;} 
+
+
+/* colors */
+.base {color:#cf804f;}
+.black{color:#000;}
+.white {color:#fff;}
+.orange {color: #e79621;}
+.cocoa {color:#eb9764;}
+.red {color: #d43321;}
+.gray {color: #a7a7a7;}
+.dark {color: #333;}
+
+.padd {position:relative; display:block; width:100%; height:130px;}
+/* memorize: spleft for 'small padding left' */
+.sptop {padding-top:10px !important;}
+.spleft {padding-left:10px !important;}
+.spbottom {padding-bottom:10px !important;}
+.spright {padding-right:20px !important;}
+
+/* memorize: bpleft for 'big padding left' */
+.bptop {padding-top:30px;}
+.bpleft {padding-left:30px;}
+.bpbottom {padding-bottom:30px;}
+.bpright {padding-right:30px;}
+
+.alignleft{text-align:left;}
+.alignright{text-align:right;}
+.aligncenter{text-align:center;}
+.alignnone{
+	float: none;
+	margin: 0 0 20px 0;
+}
+
+.left {float:left;}
