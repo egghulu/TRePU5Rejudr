@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HelpZone</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta charset="utf-8">
+	<meta name="author" content="Dmitry Volkov">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dmitryvolkov.me/demo/helpzone/icon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700%7COpen+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link id="switch-color" rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__figure"></div>
+	</div>
+	<!-- End Preloader -->
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<!-- Logotype -->
+				<div class="col-xs-6 col-sm-2">
+					<a class="header__logo" href="index.html">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<!-- End Logotype -->
+
+				<!-- Navigation -->
+				<div class="col-xs-6 col-sm-10">
+					<nav class="desktop-navigation-wrap">
+						<ul class="desktop-navigation">
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link1" data-target="#" href="about.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link1">
+									<li>
+										<a href="index.html">Home default</a>
+									</li>
+									<li>
+										<a href="index-2.html">Home slideshow</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link2" data-target="#" href="about.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link2">
+									<li>
+										<a href="articles.html" >Articles default</a>
+									</li>
+									<li>
+										<a href="articles-grid.html">Articles grid</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+
+							<li>
+								<a href="faq.html">FAQ</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link3" data-target="#" href="about.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link3">
+									<li>
+										<a href="about.html">About</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="article.html">Article</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="404.html">404</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+						</ul>	
+					</nav>
+					
+					<!-- mobile navigation button -->
+					<button class="navigation-button">
+						<i class="zmdi zmdi-menu"></i>
+						<i class="zmdi zmdi-close"></i>
+					</button>
+					<!-- end mobile navigation button -->
+				</div>
+				<!-- End Navigation -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Mobile Navigation -->
+	<div class="mobile-navigation">
+		<ul>
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop1" class="dropdown-toggle" href="about.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop1">
+					<li>
+						<a href="index.html">Home default</a>
+					</li>
+					<li>
+						<a href="index-2.html">Home slideshow</a>
+					</li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop2" class="dropdown-toggle" href="about.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Articles<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop2">
+					<li><a href="articles.html" >Articles default</a></li>
+					<li><a href="articles-grid.html">Articles grid</a></li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop3" class="dropdown-toggle" href="about.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop3">
+					<li><a href="about.html">About</a></li>
+					<li><a href="article.html">Article</a></li>
+					<li><a href="404.html">404</a></li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+		</ul>
+	</div>
+	<!-- End Mobile Navigation -->
+	
+	<!-- Headline -->
+	<section class="page-title" data-parallax="scroll" data-image-src="img/page-headers/about_bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>About Us</h1>
+					<p>We dream team</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Headline -->
+
+	<!-- About Section -->
+	<section class="section-padding-70 white-bg border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- About text -->
+				<div class="col-xs-12 col-md-5 col-md-push-7 col-lg-push-6 col-lg-6">
+					<h2>What we do</h2>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+					<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+				</div>
+				<!-- End About text -->
+
+				<!-- Img -->
+				<div class="col-xs-12 col-md-7 col-md-pull-5 col-lg-pull-6 col-lg-6">
+					<div class="owl-carousel owl-theme img-carousel">
+
+						<!-- Slide -->
+						<div class="item">
+							<img src="img/other/img-slide-1.jpg" alt="">
+						</div>
+						<!-- End Slide -->
+
+						<!-- Slide -->
+						<div class="item">
+							<img src="img/other/img-slide-2.jpg" alt="">
+						</div>
+						<!-- End Slide -->
+
+						<!-- Slide -->
+						<div class="item">
+							<img src="img/other/img-slide-3.jpg" alt="">
+						</div>
+						<!-- End Slide -->
+							
+					</div>
+				</div>
+				<!-- End Img -->
+			</div>
+		</div>
+	</section>
+	<!-- End About Section -->
+
+	<!-- Services Section -->
+	<section class="section-padding-70 white-bg border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Service card -->
+				<div class="col-xs-12 col-sm-4">
+					<div class="service-card">
+						<a href="about.html#">
+							<span class="icon"><i class="zmdi zmdi-phone"></i></span>
+							<h2>Call Center</h2>
+							<h6><span>23</span>outbound call to day</h6>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</a>
+					</div>
+				</div>
+				<!-- End Service card -->
+
+				<!-- Service card -->
+				<div class="col-xs-12 col-sm-4">
+					<div class="service-card">
+						<a href="about.html#" class="chat-button">
+							<span class="icon"><i class="zmdi zmdi-comments"></i></span>
+							<h2>Live Chat</h2>
+							<h6><span>24\7</span>online</h6>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</a>
+					</div>
+				</div>
+				<!-- End Service card -->
+
+				<!-- Service card -->
+				<div class="col-xs-12 col-sm-4">
+					<div class="service-card">
+						<a href="faq.html">
+							<span class="icon"><i class="zmdi zmdi-assignment"></i></span>
+							<h2>FAQ</h2>
+							<h6><span>1138</span>FAQ<sub>s</sub></h6>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</a>
+					</div>
+				</div>
+				<!-- End Service card -->
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section -->
+
+	<!-- Team Section -->
+	<section class="section-padding-100 white-bg">
+		<div class="container">
+			<div class="row">
+				<!-- Section title -->
+				<div class="col-xs-12">
+					<div class="section-title">
+						<h2>Our Team</h2>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<!-- End Section title -->
+
+				<!-- Team Slider -->
+				<div class="clearfix"></div>
+				<div class="owl-carousel owl-theme card-carousel">
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user1.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Product Manager</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user2.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Designer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user3.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Developer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user4.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Developer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user1.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Product Manager</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user2.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Designer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user3.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Developer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Team card -->
+						<div class="col-xs-12">
+							<div class="card team-card">
+								<img src="img/team/user4.jpg" alt="">
+								<h4>John Doe</h4>
+								<span>Developer</span>
+								<ul>
+									<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+									<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Team card -->
+					</div>
+					<!-- End Slide -->
+				</div>
+				<!-- End Team Slider -->
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Team Section -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Social links -->
+				<div class="col-xs-12 col-sm-6 col-sm-push-6">
+					<ul class="footer__social-list">
+						<li><a href="about.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+						<li><a href="about.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+						<li><a href="about.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+						<li><a href="about.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+					</ul>
+				</div>
+				<!-- End Social links -->
+
+				<!-- Copyright -->
+				<div class="col-xs-12 col-sm-6 col-sm-pull-6">
+					<div class="footer__copyright">
+						<small>Copyright © 2016 <a href="about.html#">HelpZone</a>. All Rights Reserved.</small>
+					</div>
+				</div>
+				<!-- End Copyright -->
+
+				<!-- Back to top -->
+				<button class="back-to-top"><i class="zmdi zmdi-chevron-up"></i></button>
+				<!-- End Back to top -->
+
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Chat -->
+	<button class="chat-button chat-button--fixed">
+		<i class="zmdi zmdi-comments"></i>
+		<i class="zmdi zmdi-close"></i>
+	</button>
+
+	<div class="chat">
+		<div class="chat__content">
+			
+			<!-- Text Wrap -->
+			<div class="chat__text-wrap">
+				<span class="chat__title">Get support</span>
+				<p class="chat__text">Earnest request, before contacting a support check for the answer to your question in our <a href="faq.html">database</a>.</p>
+			</div>
+			<!-- End Text Wrap -->
+
+			<!-- Correspondence Wrap -->
+			<div class="chat__message-wrap">
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:47 am</div>
+						<div class="text">
+							Hello, I need your help.
+						</div>
+					</div>
+				</div>
+
+				<div class="message adviser clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">Adviser</div>
+						<div class="time">13:47 am</div>
+						<div class="text">
+							Hi! We are happy to help you.
+						</div>
+					</div>
+				</div>
+
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:48 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam eveniet, eos perferendis porro qui, ex placeat officia alias, illo magnam aliquam! Dolore obcaecati possimus, adipisci. Quo eligendi <a href="about.html#">voluptate</a> iste.
+						</div>
+					</div>
+				</div>
+
+				<div class="message adviser clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">Adviser</div>
+						<div class="time">13:49 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt impedit, quas tempore ullam. Delectus eaque porro similique <a href="about.html#">repellendus</a> sint, ipsam.
+						</div>
+					</div>
+				</div>
+
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:50 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolore.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Correspondence Wrap -->
+
+			<!-- Write Message -->
+			<form class="chat__write" action="about.html#">
+				<input type="text" placeholder="Write message...">
+				<button type="submit" class="default-button"><i class="zmdi zmdi-mail-send"></i></button>
+			</form>
+			<!-- End Write Message -->
+
+		</div>
+	</div>
+	<!-- End Chat -->
+
+	<!-- Style Switcher -->
+	<div class="color-switcher">
+		<a class="picker">
+			<i class="zmdi zmdi-invert-colors"></i>
+		</a>
+		<div class="colors">
+			<ul>
+				<li><a href="about.html#" id="color-red" class="red">Red</a></li>
+				<li><a href="about.html#" id="color-teal" class="teal">Teal</a></li>
+				<li><a href="about.html#" id="color-indigo" class="indigo">Indigo</a></li>
+				<li><a href="about.html#" id="color-blue-grey" class="blue-grey">Blue Grey</a></li>
+				<li><a href="about.html#" id="color-dark" class="dark">Dark</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Style Switcher -->
+
+	<!--JS-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBknhSY15CjOP_Ld9ThcX80ibC29uhP2jY"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>

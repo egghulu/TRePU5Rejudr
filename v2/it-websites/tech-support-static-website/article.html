@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>HelpZone</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta charset="utf-8">
+	<meta name="author" content="Dmitry Volkov">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dmitryvolkov.me/demo/helpzone/icon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700%7COpen+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link id="switch-color" rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__figure"></div>
+	</div>
+	<!-- End Preloader -->
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<!-- Logotype -->
+				<div class="col-xs-6 col-sm-2">
+					<a class="header__logo" href="index.html">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<!-- End Logotype -->
+
+				<!-- Navigation -->
+				<div class="col-xs-6 col-sm-10">
+					<nav class="desktop-navigation-wrap">
+						<ul class="desktop-navigation">
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link1" data-target="#" href="article.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link1">
+									<li>
+										<a href="index.html">Home default</a>
+									</li>
+									<li>
+										<a href="index-2.html">Home slideshow</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link2" data-target="#" href="article.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link2">
+									<li>
+										<a href="articles.html" >Articles default</a>
+									</li>
+									<li>
+										<a href="articles-grid.html">Articles grid</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+
+							<li>
+								<a href="faq.html">FAQ</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
+							<!-- Dropdown -->
+							<li class="dropdown">
+								<a id="dropdown-link3" data-target="#" href="article.html#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages
+								<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-link3">
+									<li>
+										<a href="about.html">About</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="article.html">Article</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="404.html">404</a>
+									</li>
+								</ul>
+							</li>
+							<!-- End Dropdown -->
+						</ul>	
+					</nav>
+					
+					<!-- mobile navigation button -->
+					<button class="navigation-button">
+						<i class="zmdi zmdi-menu"></i>
+						<i class="zmdi zmdi-close"></i>
+					</button>
+					<!-- end mobile navigation button -->
+				</div>
+				<!-- End Navigation -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Mobile Navigation -->
+	<div class="mobile-navigation">
+		<ul>
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop1" class="dropdown-toggle" href="article.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop1">
+					<li>
+						<a href="index.html">Home default</a>
+					</li>
+					<li>
+						<a href="index-2.html">Home slideshow</a>
+					</li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop2" class="dropdown-toggle" href="article.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Articles<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop2">
+					<li><a href="articles.html" >Articles default</a></li>
+					<li><a href="articles-grid.html">Articles grid</a></li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+			<!-- Dropdown -->
+			<li class="dropdown">
+				<a id="drop3" class="dropdown-toggle" href="article.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages<i class="zmdi zmdi-chevron-down"></i></a>
+
+				<ul class="dropdown-menu" aria-labelledby="drop3">
+					<li><a href="about.html">About</a></li>
+					<li><a href="article.html">Article</a></li>
+					<li><a href="404.html">404</a></li>
+				</ul>
+			</li>
+			<!-- End Dropdown -->
+		</ul>
+	</div>
+	<!-- End Mobile Navigation -->
+
+	<!-- Article Section-->
+	<div class="article">
+
+		<!-- Article Head -->
+		<div class="article__head" data-parallax="scroll" data-image-src="img/articles/article_big.jpg">
+			<div class="container">
+				<div class="row">
+
+					<!-- Title text -->
+					<div class="col-xs-12 col-md-10 col-md-offset-1">
+						<div class="title">
+							<div class="category category--orange">Category</div>
+							<h1>Welcome to the HelpZone</h1>
+
+							<!-- Share Button -->
+							<div class="share">
+								<button class=""><i class="zmdi zmdi-share"></i></button>
+							</div>
+							<!-- End Share Button -->
+						</div>
+					</div>
+					<!-- End Title text -->
+
+				</div>
+			</div>
+		</div>
+		<!-- End Article Head -->
+
+		<!-- Article Text -->
+		<div class="container">
+			<div class="row">
+
+				<!-- Text -->
+				<div class="col-xs-12 col-md-10 col-md-offset-1">
+					<div class="article__text">
+						<h1>Some title(H1)</h1>
+
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+							
+						<h2>Some title(H2)</h2>
+
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+						<h3>Some title(H3)</h3>
+
+						<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+						<img src="img/articles/article_img.jpg" alt="">
+
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+
+						<h4>Some title(H4)</h4>
+
+						<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+						<blockquote>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</blockquote>
+
+						<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+						<h5>Some title(H5)</h5>
+
+						<h6>Some title(H6)</h6>
+
+						<p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+						<ul>
+							<li>Theme Forest</li>
+							<li>Graphic River</li>
+							<li>Audio Jungle</li>
+							<li>3D Ocean</li>
+							<li>Code Canayon</li>
+						</ul>
+
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <a href="article.html#">Link</a> the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+					</div>
+
+					<!-- Statistic -->
+					<ul class="article__statistic">
+						<li class="likes">
+							<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+							<span>231</span>
+						</li>
+						<li class="comments">
+							<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+							<span>421</span>
+						</li>
+					</ul>
+					<!-- End Statistic -->
+				</div>
+				<!-- End Text -->
+
+			</div>
+		</div>
+		<!-- End Article Text -->
+
+		<!-- Comments Wrap -->
+		<div id="comments-article-id1" class="article__comments">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-10 col-md-offset-1">
+
+						<h4 class="article__comments-title">Comments <span class="counter">(3)</span></h4>
+		
+						<!-- Comments -->
+						<ul class="article__comments-list">
+							<!-- Comment -->
+							<li class="comment">
+								<div class="actions clearfix">
+									<div class="autor">
+										<span class="avatar">
+											<img src="img/user.jpg" alt="">
+										</span>
+										<span class="name">John Doe</span>
+										<span class="time">23m ago</span>
+									</div>
+
+									<button class="reply-button"><i class="zmdi zmdi-mail-reply"></i></button>
+								</div>
+								<div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+							</li>
+							<!-- End Comment -->
+
+							<!-- Reply Comment -->
+							<li class="comment reply">
+								<div class="actions clearfix">
+									<div class="autor">
+										<span class="avatar">
+											<img src="img/user.jpg" alt="">
+										</span>
+										<span class="name">John Doe</span>
+										<span class="time">48m ago</span>
+									</div>
+
+									<button class="reply-button"><i class="zmdi zmdi-mail-reply"></i></button>
+								</div>
+								<div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+							</li>
+							<!-- End Reply Comment -->
+
+							<!-- Comment -->
+							<li class="comment">
+								<div class="actions clearfix">
+									<div class="autor">
+										<span class="avatar">
+											<img src="img/user.jpg" alt="">
+										</span>
+										<span class="name">John Doe</span>
+										<span class="time">1 day ago</span>
+									</div>
+
+									<button class="reply-button"><i class="zmdi zmdi-mail-reply"></i></button>
+								</div>
+								<div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look <a href="article.html#">even</a> slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+							</li>
+							<!-- End Comment -->
+						</ul>
+						<!-- End Comments -->
+
+						<h4 class="article__comments-title">Add Comment</h4>
+
+						<form class="article__comments-form" action="article.html#">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<input type="text" placeholder="First Name">
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<input type="text" placeholder="Email">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea placeholder="Comment"></textarea>
+							</div>
+
+							<button class="default-button">send comment</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Comments Wrap -->
+
+	</div>
+	<!-- End Article Section -->
+
+	<!-- Recommended Articles Section -->
+	<section class="section-padding-100 white-bg">
+		<div class="container">
+			<div class="row">
+
+				<!-- Section title -->
+				<div class="col-xs-12">
+					<div class="section-title">
+						<h2>Recommended Articles</h2>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<!-- End Section title -->
+
+				<!-- Article Slider -->
+				<div class="clearfix"></div>
+				<div class="owl-carousel owl-theme card-carousel">
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card -->
+						<div class="col-xs-12">
+							<div class="card article-card">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Background card -->
+									<img src="img/articles/article1.jpg" alt="">
+									<!-- End Background card -->
+									<!-- Article category -->
+									<div class="category category--pink">Category</div>
+									<!-- End Article category -->
+									<h3>Your support</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--purple">Category</span>
+									<!-- End Article category -->
+									<h3>Maximize efficiency</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--orange">Category</span>
+									<!-- End Article category -->
+									<h3>Impact</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--teal">Category</span>
+									<!-- End Article category -->
+									<h3>Awareness</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card -->
+						<div class="col-xs-12">
+							<div class="card article-card">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Background card -->
+									<img src="img/articles/article2.jpg" alt="">
+									<!-- End Background card -->
+									<!-- Article category -->
+									<span class="category category--indigo">Category</span>
+									<!-- End Article category -->
+									<h3>Innovation in the Workplace</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--red">Category</span>
+									<!-- End Article category -->
+									<h3>HelpZone</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--orange">Category</span>
+									<!-- End Article category -->
+									<h3>Impact</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+
+					<!-- Slide -->
+					<div class="item">
+						<!-- Article card (white background) -->
+						<div class="col-xs-12">
+							<div class="card article-card article-card--white">
+								<div class="card-wrap">
+									<a href="article.html"></a>
+									<!-- Article category -->
+									<span class="category category--indigo">Category</span>
+									<!-- End Article category -->
+									<h3>Title</h3>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+									<!-- Statistic -->
+									<ul class="statistic">
+										<li class="likes">
+											<a href="article.html#"><i class="zmdi zmdi-favorite-outline"></i></a>
+											<span>231</span>
+										</li>
+										<li class="comments">
+											<a href="article.html#comments-article-id1"><i class="zmdi zmdi-comment-outline"></i></a>
+											<span>421</span>
+										</li>
+									</ul>
+									<!-- End Statistic -->
+								</div>
+							</div>
+						</div>
+						<!-- End Article card (white background) -->
+					</div>
+					<!-- End Slide -->
+				</div>
+				<!-- End Article Slider -->
+			</div>
+		</div>
+	</section>
+	<!-- End Recommended Articles Section -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Social links -->
+				<div class="col-xs-12 col-sm-6 col-sm-push-6">
+					<ul class="footer__social-list">
+						<li><a href="article.html#"><i class="zmdi zmdi-facebook"></i></a></li>
+						<li><a href="article.html#"><i class="zmdi zmdi-twitter"></i></a></li>
+						<li><a href="article.html#"><i class="zmdi zmdi-google-plus"></i></a></li>
+						<li><a href="article.html#"><i class="zmdi zmdi-instagram"></i></a></li>
+					</ul>
+				</div>
+				<!-- End Social links -->
+
+				<!-- Copyright -->
+				<div class="col-xs-12 col-sm-6 col-sm-pull-6">
+					<div class="footer__copyright">
+						<small>Copyright © 2016 <a href="article.html#">HelpZone</a>. All Rights Reserved.</small>
+					</div>
+				</div>
+				<!-- End Copyright -->
+
+				<!-- Back to top -->
+				<button class="back-to-top"><i class="zmdi zmdi-chevron-up"></i></button>
+				<!-- End Back to top -->
+
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Chat -->
+	<button class="chat-button chat-button--fixed">
+		<i class="zmdi zmdi-comments"></i>
+		<i class="zmdi zmdi-close"></i>
+	</button>
+
+	<div class="chat">
+		<div class="chat__content">
+			
+			<!-- Text Wrap -->
+			<div class="chat__text-wrap">
+				<span class="chat__title">Get support</span>
+				<p class="chat__text">Earnest request, before contacting a support check for the answer to your question in our <a href="faq.html">database</a>.</p>
+			</div>
+			<!-- End Text Wrap -->
+
+			<!-- Correspondence Wrap -->
+			<div class="chat__message-wrap">
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:47 am</div>
+						<div class="text">
+							Hello, I need your help.
+						</div>
+					</div>
+				</div>
+
+				<div class="message adviser clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">Adviser</div>
+						<div class="time">13:47 am</div>
+						<div class="text">
+							Hi! We are happy to help you.
+						</div>
+					</div>
+				</div>
+
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:48 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam eveniet, eos perferendis porro qui, ex placeat officia alias, illo magnam aliquam! Dolore obcaecati possimus, adipisci. Quo eligendi <a href="article.html#">voluptate</a> iste.
+						</div>
+					</div>
+				</div>
+
+				<div class="message adviser clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">Adviser</div>
+						<div class="time">13:49 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt impedit, quas tempore ullam. Delectus eaque porro similique <a href="article.html#">repellendus</a> sint, ipsam.
+						</div>
+					</div>
+				</div>
+
+				<div class="message user clearfix">
+					<div class="avatar-wrap">
+						<div class="avatar">
+							<img src="img/user.jpg" alt="">
+						</div>
+					</div>
+					<div class="text-wrap">
+						<div class="autor">You</div>
+						<div class="time">13:50 am</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolore.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Correspondence Wrap -->
+
+			<!-- Write Message -->
+			<form class="chat__write" action="article.html#">
+				<input type="text" placeholder="Write message...">
+				<button type="submit" class="default-button"><i class="zmdi zmdi-mail-send"></i></button>
+			</form>
+			<!-- End Write Message -->
+
+		</div>
+	</div>
+	<!-- End Chat -->
+
+	<!-- Style Switcher -->
+	<div class="color-switcher">
+		<a class="picker">
+			<i class="zmdi zmdi-invert-colors"></i>
+		</a>
+		<div class="colors">
+			<ul>
+				<li><a href="article.html#" id="color-red" class="red">Red</a></li>
+				<li><a href="article.html#" id="color-teal" class="teal">Teal</a></li>
+				<li><a href="article.html#" id="color-indigo" class="indigo">Indigo</a></li>
+				<li><a href="article.html#" id="color-blue-grey" class="blue-grey">Blue Grey</a></li>
+				<li><a href="article.html#" id="color-dark" class="dark">Dark</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Style Switcher -->
+
+	<!--JS-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBknhSY15CjOP_Ld9ThcX80ibC29uhP2jY"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
