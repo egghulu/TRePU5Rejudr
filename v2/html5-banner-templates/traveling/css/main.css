@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{ margin:0px; padding:0px; background:url(bg-1.jpg) repeat 0 0;}
+
+iframe{
+	border:#333 1px dashed; background:#fff;
+	}
+td{ padding:10px 0 0 0;}
+	
+.top-hdr{ width:100%; text-align:center; background:#333; padding:10px 0;}
+.top-hdr h3{font-family: 'Raleway', sans-serif; font-size:25px; color:#fff; margin:0; font-weight:500;}
+h4{font-family: 'Raleway', sans-serif; font-size:18px; color:#333; margin:25px 0 10px 0; font-weight:500; text-align:center;}
+p{font-family: 'Raleway', sans-serif; font-size:15px; color:#333; text-align:center; margin:3px;}
+.white{ width:25px; height:25px; border:#d7d7d7 solid 1px; background:#fff; display:inline-block; margin:0 3px;}
+.purple{ width:25px; height:25px; border:#d7d7d7 solid 1px; background:#842a7c; display:inline-block; margin:0 3px;}
