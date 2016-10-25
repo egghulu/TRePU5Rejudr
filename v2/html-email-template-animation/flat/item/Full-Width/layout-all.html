@@ -1,0 +1,1883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1.0"> 
+<meta name="format-detection" content="telephone=no">
+<title>Flat : Responsive Email Templates</title>
+<style type="text/css">
+
+/* Resets: see reset.css for details */
+.ReadMsgBody { width: 100%; background-color: #ffffff;}
+.ExternalClass {width: 100%; background-color: #ffffff;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+html{width: 100%; }
+body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+body {margin:0; padding:0;}
+table {border-spacing:0;}
+img{display:block !important;}
+
+table td {border-collapse:collapse;}
+.yshortcuts a {border-bottom: none !important;}
+
+a{
+  text-decoration:none;
+}
+
+
+a:hover{
+  text-decoration:underline;
+}
+
+
+@media only screen and (max-width: 640px){
+  body{
+    width:auto!important;
+  }
+  /*start class for header */
+  table[class="container-header"]{
+    width:100% !important;
+    padding-left: 20px!important; 
+    padding-right: 20px!important;
+
+  }
+  td[class="BG-percent1"]{
+    width:0px !important;
+    height:200px !important;
+  }
+   td[class="BG-percent2"]{
+    width:0px !important;
+    height:20px !important;
+
+  }
+  /*end class for header */
+
+  /*start width 100%*/
+  table[class="container"]{
+    width: 100%!important;
+
+  }
+  table[class="container-footer1"]{
+    padding-left:15px !important;
+  }
+  table[class="container-footer2"]{
+    width:56% !important;
+     padding-right:15px !important;
+  }
+
+ 
+ 
+
+  img[class="image-100-percent"]{
+    width:100% !important;
+    max-width:100% !important;
+
+  }
+  img[class="image-100-percent-small"]{
+    width:189px !important;
+    margin:0 !important;
+    max-width:100% !important;
+
+  }
+   
+  table[class="full-width"]{
+    width:100% !important;
+  }
+  table[class="full-width-percent"]{
+    width:46% !important;
+  }
+
+  table[class="full-width-margin-right-15"]{
+    width:46% !important;
+    margin-right:15px !important;
+  }
+  table[class="full-width-margin-left-15"]{
+    width:46% !important;
+    margin-left:15px !important;
+  }
+
+  table[class="full-width-margin-right-15-2"]{
+    width:47% !important;
+    margin-right:15px !important;
+  }
+   table[class="full-width-margin-left-15-2"]{
+    width:47% !important;
+    margin-left:15px !important;
+  }
+table[class="full-width-margin-right-15-3"]{
+    width:30% !important;
+    margin-right:20px !important;
+  }
+  table[class="full-width-non-margin-right-15-3"]{
+    width:30% !important;
+  }
+   table[class="full-width-margin-left-15-3"]{
+    width:30% !important;
+    margin-left:20px !important;
+  }
+   /*end width 100%*/
+
+  /* start increase padding and margin */
+  td[class="increase-padding-left-20"]{
+    padding-left:20px !important;
+  } 
+  td[class="increase-padding-right-20"]{
+    padding-right:20px !important;
+  } 
+  table[id="align-left"]{
+    float:left !important;
+  }
+  /* end increase padding and margin */
+
+
+  /* start clear and remove*/
+  table[class="remove"]{
+    display:none !important;
+  }
+  td[class="remove"]{
+    display:none !important;
+  }
+  /* end clear and remove*/
+
+}
+@media only screen and (max-width: 479px){
+  /*start width 100% */
+   table[class="container2"]{
+    width: 100%!important; 
+    float:none !important;
+  }
+
+    table[class="container-footer1"]{
+    width:100% !important;
+    padding-left: 15px !important;
+    padding-right:15px !important;
+  }
+  table[class="container-footer2"]{
+    width:100% !important;
+    padding-left: 15px !important;
+    padding-right:15px !important;
+  }
+
+ 
+  img[class="image-100-percent"]{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:280px !important;
+  }
+   img[class="image-100-percent-small"]{
+    width:100% !important;
+    margin:0 !important;
+    max-width:100% !important;
+    min-width:280px !important;
+  }
+
+
+   table[class="full-width"]{
+    width:100% !important;
+  }
+  table[class="full-width-percent"]{
+    width:100% !important;
+  }
+  
+  table[class="full-width-margin-right-15"]{
+    width:100% !important;
+    margin-right:0 !important;
+    height:auto !important;
+  }
+  table[class="full-width-margin-left-15"]{
+    width:100% !important;
+    margin-left:0 !important;
+  }
+  table[class="full-width-margin-right-15-2"]{
+    width:100% !important;
+    margin-right:0 !important;
+    height:auto !important;
+  }
+  table[class="full-width-margin-left-15-2"]{
+    width:100% !important;
+    margin-left:0 !important;
+  }
+  table[class="full-width-margin-right-15-3"]{
+    width:100% !important;
+    margin-right:0 !important;
+  }
+    table[class="full-width-non-margin-right-15-3"]{
+    width:100% !important;
+  }
+   table[class="full-width-margin-left-15-3"]{
+    width:100% !important;
+    margin-left:0 !important;
+  }
+
+  table[id="col-underline"]{
+    float: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid #eee;
+  }
+  td[id="col-underline"]{
+    float: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid #eee;
+  }
+  table[id="col-underline-blue"]{
+    float: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid #0e526e;
+  }
+  td[id="col-underline-blue"]{
+    float: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid #0e526e;
+  }
+
+
+   /*end width 100% */
+
+   /*start width less than 100%*/
+   table[class="width-75-percent"]{
+    width:75% !important;
+   }
+
+   /*end width less than 100%*/
+
+
+   /*start text center*/
+    td[class="text-center"]{
+      text-align: center !important;
+    }
+   /*end text center*/
+
+   /* start text left*/
+   td[class="text-left"]{
+     text-align: left !important;
+   }
+   /* end text left*/
+
+  /* start  clear and remove */
+  table[id="clear-margin"]{
+    margin:0 !important;
+  }
+  table[id="clear-padding"]{
+    padding:0 !important;
+  }
+  td[id="clear-padding"]{
+    padding:0 !important;
+  }
+  table[class="remove-479"]{
+    display:none !important;
+  }
+  td[class="remove-479"]{
+    display:none !important;
+  }
+  table[id="clear-align"]{
+    float:none !important;
+  }
+  div[class="text-center"]{
+    text-align: center !important;
+  }
+  /* end  clear and remove */
+
+  table[class="img-center"]{
+    float:none !important;
+
+  }
+
+  /*start force float*/
+  table[class="float-left"]{
+    float:left !important;
+  }
+  /* end force float*/
+
+  /* start increase padding*/
+  table[id="increase-padding-rigth-20"]{
+    padding-right:20px !important;
+  }
+  /* end increase padding*/
+}
+
+
+
+
+
+
+
+
+</style>
+
+<script language="JavaScript">eval(unescape("%3C%21%2D%2D%20%0A%2F%2F%44%69%73%61%62%6C%65%20%72%69%67%68%74%20%63%6C%69%63%6B%20%73%63%72%69%70%74%20%0A%2F%2F%76%69%73%69%74%20%68%74%74%70%3A%2F%2F%77%77%77%2E%72%61%69%6E%62%6F%77%2E%61%72%63%68%2E%73%63%72%69%70%74%6D%61%6E%69%61%2E%63%6F%6D%2F%73%63%72%69%70%74%73%2F%20%0A%76%61%72%20%6D%65%73%73%61%67%65%3D%22%53%6F%72%72%79%2C%20%72%69%67%68%74%2D%63%6C%69%63%6B%20%68%61%73%20%62%65%65%6E%20%64%69%73%61%62%6C%65%64%22%3B%20%0A%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%20%0A%66%75%6E%63%74%69%6F%6E%20%63%6C%69%63%6B%49%45%28%29%20%7B%69%66%20%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%20%7B%28%6D%65%73%73%61%67%65%29%3B%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%7D%7D%20%0A%66%75%6E%63%74%69%6F%6E%20%63%6C%69%63%6B%4E%53%28%65%29%20%7B%69%66%20%0A%28%64%6F%63%75%6D%65%6E%74%2E%6C%61%79%65%72%73%7C%7C%28%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%26%26%21%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%29%20%7B%20%0A%69%66%20%28%65%2E%77%68%69%63%68%3D%3D%32%7C%7C%65%2E%77%68%69%63%68%3D%3D%33%29%20%7B%28%6D%65%73%73%61%67%65%29%3B%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%7D%7D%7D%20%0A%69%66%20%28%64%6F%63%75%6D%65%6E%74%2E%6C%61%79%65%72%73%29%20%0A%7B%64%6F%63%75%6D%65%6E%74%2E%63%61%70%74%75%72%65%45%76%65%6E%74%73%28%45%76%65%6E%74%2E%4D%4F%55%53%45%44%4F%57%4E%29%3B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%63%6C%69%63%6B%4E%53%3B%7D%20%0A%65%6C%73%65%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%75%70%3D%63%6C%69%63%6B%4E%53%3B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%63%6C%69%63%6B%49%45%3B%7D%20%0A%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%6E%65%77%20%46%75%6E%63%74%69%6F%6E%28%22%72%65%74%75%72%6E%20%66%61%6C%73%65%22%29%20%0A%2F%2F%20%2D%2D%3E%20%0A%3C%21%2D%2D%20%0A%2F%2F%44%69%73%61%62%6C%65%20%73%65%6C%65%63%74%2D%74%65%78%74%20%73%63%72%69%70%74%20%28%49%45%34%2B%2C%20%4E%53%36%2B%29%0A%2F%2F%76%69%73%69%74%20%68%74%74%70%3A%2F%2F%77%77%77%2E%72%61%69%6E%62%6F%77%2E%61%72%63%68%2E%73%63%72%69%70%74%6D%61%6E%69%61%2E%63%6F%6D%2F%73%63%72%69%70%74%73%2F%20%0A%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%20%0A%2F%2F%0A%2F%2A%66%75%6E%63%74%69%6F%6E%20%64%69%73%61%62%6C%65%73%65%6C%65%63%74%28%65%29%7B%0A%72%65%74%75%72%6E%20%66%61%6C%73%65%0A%7D%20%0A%66%75%6E%63%74%69%6F%6E%20%72%65%45%6E%61%62%6C%65%28%29%7B%0A%72%65%74%75%72%6E%20%74%72%75%65%0A%7D%20%0A%2F%2F%69%66%20%49%45%34%2B%0A%64%6F%63%75%6D%65%6E%74%2E%6F%6E%73%65%6C%65%63%74%73%74%61%72%74%3D%6E%65%77%20%46%75%6E%63%74%69%6F%6E%20%28%22%72%65%74%75%72%6E%20%66%61%6C%73%65%22%29%20%0A%2F%2F%69%66%20%4E%53%36%0A%69%66%20%28%77%69%6E%64%6F%77%2E%73%69%64%65%62%61%72%29%7B%0A%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%64%69%73%61%62%6C%65%73%65%6C%65%63%74%0A%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6C%69%63%6B%3D%72%65%45%6E%61%62%6C%65%0A%7D%2A%2F%0A%0A%2F%2F%20%2D%2D%3E%0A%2F%2F%20%64%72%61%67%20%69%6D%61%67%65%0A%2F%2F%77%69%6E%64%6F%77%2E%6F%6E%64%72%61%67%73%74%61%72%74%20%3D%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%20%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%20%7D%20%0A%0A%0A%0A%2F%2F%20%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%46%31%32%20%64%69%73%61%62%6C%65%20%63%6F%64%65%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%0A%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6B%65%79%70%72%65%73%73%20%3D%20%66%75%6E%63%74%69%6F%6E%20%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%65%76%65%6E%74%20%3D%20%28%65%76%65%6E%74%20%7C%7C%20%77%69%6E%64%6F%77%2E%65%76%65%6E%74%29%3B%0A%20%20%20%20%20%20%20%20%69%66%20%28%65%76%65%6E%74%2E%6B%65%79%43%6F%64%65%20%3D%3D%20%31%32%33%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%2F%2F%61%6C%65%72%74%28%27%4E%6F%20%46%2D%31%32%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%20%3D%20%66%75%6E%63%74%69%6F%6E%20%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%65%76%65%6E%74%20%3D%20%28%65%76%65%6E%74%20%7C%7C%20%77%69%6E%64%6F%77%2E%65%76%65%6E%74%29%3B%0A%20%20%20%20%20%20%20%20%69%66%20%28%65%76%65%6E%74%2E%6B%65%79%43%6F%64%65%20%3D%3D%20%31%32%33%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%61%6C%65%72%74%28%27%4E%6F%20%46%2D%6B%65%79%73%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6B%65%79%64%6F%77%6E%20%3D%20%66%75%6E%63%74%69%6F%6E%20%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%65%76%65%6E%74%20%3D%20%28%65%76%65%6E%74%20%7C%7C%20%77%69%6E%64%6F%77%2E%65%76%65%6E%74%29%3B%0A%20%20%20%20%20%20%20%20%69%66%20%28%65%76%65%6E%74%2E%6B%65%79%43%6F%64%65%20%3D%3D%20%31%32%33%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%61%6C%65%72%74%28%27%4E%6F%20%46%2D%6B%65%79%73%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%66%61%6C%73%65%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%65%6E%64%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F"));</script>
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<!--start 100% wrapper (white background) -->
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #ffffff;">
+
+   <!--start top navigation wrapper-->
+    <tr>
+      <td align="center" valign="top" bgcolor="#0e2430" style="background-color: #0e2430;" >
+
+        <!-- start top navigation container -->
+        <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#0e2430" style="background-color: #0e2430;">
+          <tr>
+            <td valign="top" >
+
+             
+
+              <!-- start top navigaton -->
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" >
+                <tr>
+                  <td valign="top">
+
+                    <table width="156" align="left" border="0" cellspacing="0" cellpadding="0" class="container2">
+
+                      <tr>
+                        <td height="50" align="center" valign="mindle"  id="clear-padding">
+                          <a href="layout-all.html#">
+                            <img src="images/logo.png" width="140" style="max-width:140px;" alt="Logo" border="0" hspace="0" vspace="0"/>                    
+                          </a>
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <!--start icon socail navigation -->
+                    <table  border="0"  align="right" cellpadding="0" cellspacing="0"  class="container2" >
+                      <tr>
+                        <td height="15" valign="top" class="remove-479">
+                         
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" align="center"  >
+
+                          <table  border="0"  align="center" cellpadding="0" cellspacing="0" class="container2">
+                            <tr>
+                              <td style="padding-left:20px;"  height="50" align="center" valign="mindle"  id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-googleplus.png" width="35" alt="icon-googleplus" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px; " height="50" align="center" valign="mindle" id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-facebook.png" width="35" alt="icon-facebook" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px; " height="50" align="center" valign="mindle" id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-twitter.png" width="35" alt="icon-twitter" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px;" height="50" align="center" valign="mindle"  id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-youtube.png" width="35" alt="icon-youtube" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="font-size: 14px; color: #8d9caf; text-align: center; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 26px; text-align:center;">
+                          You can’t see this email?
+                          <span style="color: #9ac8f3; font-style:italic; font-weight: normal;">
+                            <a href="layout-all.html#" style=" color: #9ac8f3; font-style:italic; font-weight: normal;">view it online</a>
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--end icon socail navigation --> </td>
+                </tr>
+              </table>
+              <!-- end top navigaton -->
+
+              <!--start space -->
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" >
+                <tr>
+                  <td height="15"></td>
+                </tr>
+              </table>
+              <!--end space --> 
+            </td>
+          </tr>
+        </table>
+        <!-- end top navigation container --> </td>
+    </tr>
+    <!--end top navigation wrapper-->
+  
+  <!--start header wrapper--> 
+  <tr>
+    <td class="full-width"  width="100%" align="center" valign="top" bgcolor="#0e526e" style="background-color: #0e526e; " >
+       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+
+           <td valign="top">
+             <!-- start header container -->
+              <table width="590" align="center" border="0" cellspacing="0" cellpadding="0" class="container-header">
+               <tr>
+                 <td width="590" height="20"></td>
+               </tr>
+                <tr>
+                  <td valign="top" >
+
+                     <a href="layout-all.html#"><img class="image-100-percent" src="images/header-590x300.gif" width="590" alt="header-590x300"  style="max-width:590px; display:block; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+                  </td>
+                 
+                </tr>
+              </table>
+              <!-- end header container -->
+           </td>
+          <tr>
+            <td width="590" height="20"></td>
+          </tr>
+        
+         </tr>
+       </table>
+        
+    </td>
+  </tr>
+  <!--end header wrapper-->
+
+ 
+
+   <!--start title wrapper-->
+  <tr>
+    <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+      
+      <!-- start title container -->
+      <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff" style="background-color: #ffffff; padding-left:15px; padding-right:15px;">
+
+        <!-- start space -->
+        <tr>
+          <td valign="top" height="10"></td>
+        </tr>
+         <!-- end space -->
+
+        <!-- start head title -->
+        <tr>
+          <td width="590" style="font-size: 25px; color: #3293cb;  font-weight: bold; text-align: center; font-family: Helvetica, Arial, sans-serif; line-height: 32px;">
+             <singleline><span style="color:#df5153;">&#9830;</span> Showcasing your work <span style="color:#df5153;">&#9830;</span></singleline><br>
+            <singleline><span style="color:#f0d41b; font-size:18px; font-weight: bold;">&#9733; &#9733; &#9733; &#9733; &#9734;</span></singleline>
+          </td>
+        </tr>
+        <!-- end head title -->
+
+        <!-- start space -->
+        <tr>
+          <td width="590" height="10"></td>
+        </tr>
+        <!-- end space -->
+
+        <!-- start content title -->
+        <tr>
+          <td width="590" style="font-size: 14px; color: #7f7f7f; text-align: center; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 20px;">
+            <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eimod tempor incididunt utlabore etdolore magna aliqua. Ut enim minimetdolore magna aliqua. Ut enim minim
+utlabore etdolore magna aliqua. Ut enim minimetdolore</multiline>           
+          </td>
+        </tr>
+        <!-- end content title -->
+        
+        <!-- start space -->
+         <tr>
+           <td height="15"></td>
+         </tr>
+        <!-- end space -->
+
+
+      </table>
+      <!-- end title container -->
+    </td>
+  </tr>
+ <!--end title wrapper-->
+
+
+  <!-- start head content tab --> 
+ <tr>
+   <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"   style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+       <tr>
+         <td valign="mindle">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+             <tr>
+               <td  style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:bold; font-style:italic; text-align:left; padding-right:30px;">
+                 <singleline>PROMOTIONS&nbsp;</singleline>
+               </td>
+               <!-- start tab color --> 
+               <td width="100%" valign="mindle" >
+                 <table width="100%" height="10" border="0" cellspacing="0" cellpadding="0" align="left" height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;">
+                   <tr>
+                     <td width="20"   height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;"></td>
+                     <td width="10%"  height="10" bgcolor="#1f668f" style="background-color:#1f668f;"></td>
+                     <td width="10%"  height="10" bgcolor="#3d82aa" style="background-color:#3683af;"></td>
+                     <td width="70%"  height="10" bgcolor="#3293cb" style="background-color:#2599db;"></td>
+                   </tr>
+                 </table>
+               </td>
+               <!-- end tab color --> 
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+ <!-- end head content tab --> 
+
+
+ <!-- start layout-1 wrapper -->
+ <tr>
+   <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+
+     <!-- start layout-1 container -->
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff" style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+        <!-- start space -->
+       <tr>
+         <td valign="top" width="100%">
+           
+          <!-- start layout-1 content left -->
+          <table width="263" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15" id="col-underline" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="center"  >
+                <a href="layout-all.html#"><img class="image-100-percent" src="images/image1-280x192.jpg" width="263" alt="image1-280x192" style="display:block; max-width:263px; border-radius: 10px; background-clip: padding-box; " border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+             <tr>
+              <td height="10"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Image Column One</singleline></a></span>
+                    </td>
+                  </tr>
+
+                   <tr>
+                    <td height="10"></td>
+                  </tr>  
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-1 content left -->
+         
+
+         
+            <!-- start space  -->
+            <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+              <tr>
+                <td width="0" height="2" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                  <p style="padding-left: 23px;">&nbsp;</p>               
+                </td>
+              </tr>
+            </table>
+            <!-- end space  -->
+          
+
+         
+          <!-- start layout-1 content right -->
+           <table width="263" border="0" cellspacing="0" cellpadding="0" align="right" class="full-width-margin-left-15" id="col-underline" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="center" >
+                <a href="layout-all.html#"><img class="image-100-percent" src="images/image2-280x192.jpg" width="263" alt="image2-280x192" style="display:block; max-width:263px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              
+              </td>
+            </tr>
+
+             <tr>
+              <td height="10"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Image Column Two</singleline></a></span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td height="10"></td>
+                  </tr> 
+                  
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb;  font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-1 content right -->
+
+         </td>
+       </tr>
+        <tr>
+         <td  height="15" ></td>
+       </tr>
+
+     </table>
+     <!-- end layout-1 container -->
+
+   </td>
+ </tr>
+ <!-- start layout-1 wrapper -->
+
+ <!-- start head content tab --> 
+ <tr>
+   <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"  style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+       <tr>
+         <td valign="mindle">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+             <tr>
+               <td  style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:bold; font-style:italic; text-align:left; padding-right:30px;">
+                 <singleline>NEWS&nbsp;UPDATE&nbsp;</singleline>
+               </td>
+               <!-- start tab color --> 
+               <td width="100%" valign="mindle" >
+                 <table width="100%" height="10" border="0" cellspacing="0" cellpadding="0" align="left" height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;">
+                   <tr>
+                     <td width="20"   height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;"></td>
+                     <td width="10%"  height="10" bgcolor="#1f668f" style="background-color:#1f668f;"></td>
+                     <td width="10%"  height="10" bgcolor="#3d82aa" style="background-color:#3683af;"></td>
+                     <td width="70%"  height="10" bgcolor="#3293cb" style="background-color:#2599db;"></td>
+                   </tr>
+                 </table>
+               </td>
+               <!-- end tab color --> 
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+ <!-- end head content tab --> 
+
+
+<!-- start layout-2 wrapper -->
+<tr>
+ <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+      <!-- start layout-2 container -->
+      <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"  style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+
+        <tr>
+          <td valign="top" >
+            <!-- start layout-2 content left -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3" id="col-underline" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"  >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image3-280x247.jpg" width="170" alt="image3-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td height="10"></td>
+            </tr>
+        
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline><span style="color: #df5153; font-weight: bold;">&#10010;</span>  Image  Three </singleline></a></span>
+                    </td>
+                  </tr>
+                  
+                   <tr>
+                    <td height="10"></td>
+                  </tr>
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb;  font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+
+                  <tr>
+                     <td height="15"></td>
+                   </tr>
+
+                   <tr>
+                     <td valign="top">
+                       <!-- start button -->                   
+                       <table  border="0" align="left" cellpadding="0" cellspacing="0" >
+                         <tr>
+                           <td align="center" valign="middle" width="100%" height="32" bgcolor="#ffffff" style=" background-color: #ffffff; font-size:13px; font-family: Helvetica, sans-serif,Arial,Tahoma; text-align:center;  color:#3293cb; font-weight: normal; padding-left:15px; padding-right:15px; border: 1px solid #3293cb; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;">
+
+                             <span style="color: #3293cb; font-weight: normal;">
+                               <a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: normal;">
+                                 <singleline>Read more</singleline>
+                               </a>
+                             </span>
+                           </td>
+                         </tr>
+                       </table>
+                       <!-- end button --> 
+                     </td>
+                   </tr>
+
+
+               </table>
+                
+              </td>
+            </tr>
+
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-2 content left -->
+
+           <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-2 content center -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3" id="col-underline" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"> 
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image4-280x247.jpg" width="170" alt="image4-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+             <tr>
+              <td height="10"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline><span style="color: #df5153; font-weight: bold;">&#10010;</span> Image Four</singleline></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td height="10"></td>
+                  </tr>
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+
+                  <tr>
+                     <td height="15"></td>
+                   </tr>
+
+                    <tr>
+                     <td valign="top">
+                       <!-- start button -->                   
+                       <table  border="0" align="left" cellpadding="0" cellspacing="0" >
+                         <tr>
+                           <td align="center" valign="middle" width="100%" height="32" bgcolor="#ffffff" style=" background-color: #ffffff; font-size:13px; font-family: Helvetica, sans-serif,Arial,Tahoma; text-align:center;  color:#3293cb; font-weight: normal; padding-left:15px; padding-right:15px; border: 1px solid #3293cb; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;">
+
+                             <span style="color: #3293cb; font-weight: normal;">
+                               <a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: normal;">
+                                 <singleline>Read more</singleline>
+                               </a>
+                             </span>
+                           </td>
+                         </tr>
+                       </table>
+                       <!-- end button --> 
+                     </td>
+                   </tr>
+
+
+               </table>
+
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-2 content center -->
+
+          <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-2 content center -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="right" class="full-width-non-margin-right-15-3" id="col-underline" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left" >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image5-280x247.jpg" width="170" alt="image5-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+             <tr>
+              <td height="10"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline><span style="color: #df5153; font-weight: bold;">&#10010;</span> Image Five  </singleline></a></span>
+                    </td>
+                  </tr>
+
+                   <tr>
+                    <td height="10"></td>
+                  </tr>  
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline> Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+
+                   <tr>
+                     <td height="15"></td>
+                   </tr>
+
+                    <tr>
+                     <td valign="top">
+                       <!-- start button -->                   
+                       <table  border="0" align="left" cellpadding="0" cellspacing="0" >
+                         <tr>
+                           <td align="center" valign="middle" width="100%" height="32" bgcolor="#ffffff" style=" background-color: #ffffff; font-size:13px; font-family: Helvetica, sans-serif,Arial,Tahoma; text-align:center;  color:#3293cb; font-weight: normal; padding-left:15px; padding-right:15px; border: 1px solid #3293cb; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;">
+
+                             <span style="color: #3293cb; font-weight: normal;">
+                               <a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: normal;">
+                                 <singleline>Read more</singleline>
+                               </a>
+                             </span>
+                           </td>
+                         </tr>
+                       </table>
+                       <!-- end button --> 
+                     </td>
+                   </tr>
+
+               </table>
+              
+  
+              </td>
+            </tr>
+
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-2 content center -->
+
+          </td>
+        </tr>
+         <tr>
+         <td  height="15" ></td>
+       </tr>
+
+      </table>
+      <!-- end layout-2 container -->
+   </td>
+</tr>
+<!-- end layout-2 wrapper -->
+
+ <!-- start head content tab --> 
+ <tr>
+   <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"  style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+       <tr>
+         <td valign="mindle">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+             <tr>
+               <td  style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:bold; font-style:italic; text-align:left; padding-right:30px;">
+                 <singleline>KNOWLEDGES&nbsp;</singleline>
+               </td>
+               <!-- start tab color --> 
+               <td width="100%" valign="mindle" >
+                 <table width="100%" height="10" border="0" cellspacing="0" cellpadding="0" align="left" height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;">
+                   <tr>
+                     <td width="20"   height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;"></td>
+                     <td width="10%"  height="10" bgcolor="#1f668f" style="background-color:#1f668f;"></td>
+                     <td width="10%"  height="10" bgcolor="#3d82aa" style="background-color:#3683af;"></td>
+                     <td width="70%"  height="10" bgcolor="#3293cb" style="background-color:#2599db;"></td>
+                   </tr>
+                 </table>
+               </td>
+               <!-- end tab color --> 
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+ <!-- end head content tab --> 
+
+ <!-- start layout-3 wrapper -->
+ <tr>
+   <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+    
+
+     <!-- start layout-3 container -->
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"  style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+     
+      
+      <!-- end left container -->
+       <tr>
+         <td valign="top" id="col-underline">
+            
+            <!-- start image left -->
+            <table width="170" border="0" cellspacing="0" cellpadding="0" align="left"   class="container2" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+
+            <tr>
+              <td  valign="top" align="left">
+                <a href="layout-all.html"><img class="image-100-percent-small" src="images/image6-280x187.jpg" width="170" alt="image6-280x187" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+              </td>
+            </tr>
+          </table>
+          <!-- end image left -->
+
+           <!-- start space  -->
+            <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+              <tr>
+                <td width="0" height="2" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                  <p style="padding-left: 19px;">&nbsp;</p>               
+                </td>
+              </tr>
+            </table>
+            <!-- end space  -->
+            
+            <!-- start content container -->
+            <table  width="360" border="0" cellpadding="0" cellspacing="0" align="right" class="full-width-margin-left-15-2" id="align-left"> 
+               <tr>
+                  <td height="15"></td>
+               </tr>
+
+              <tr>
+                <td>
+
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Image Column Left</singleline></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td height="10" >
+                                  
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+                  
+
+                  <tr>
+                    <td height="15" >&nbsp;
+                                  
+                    </td>
+                  </tr>
+
+               </table>
+
+              </td>
+            </tr>
+            </table>
+            <!-- end content container -->
+          
+         </td>
+       </tr>
+       <!-- end left container -->
+
+
+      <!-- start right container -->
+       <tr>
+         <td valign="top" id="col-underline">
+
+            
+            <!-- start image right -->
+            <table width="170" border="0" cellspacing="0" cellpadding="0" align="right"   class="container2">
+            <tr>
+              <td height="15"></td>
+            </tr>
+
+            <tr>
+
+              <td  valign="top" class="remove-479" align="left">
+                <!-- start space  -->
+                <table class="remove-479" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                  <tr>
+                    <td width="0" height="2" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                      <p style="padding-left: 10px;">&nbsp;</p>               
+                    </td>
+                  </tr>
+                </table>
+                <!-- end space  -->   
+              </td>
+
+              <td  valign="top" align="left"  >
+                <a href="layout-all.html#"><img class="image-100-percent-small" src="images/image7-280x187.jpg" width="170" alt="image7-280x187" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+              </td>
+            </tr>
+          </table>
+          <!-- end image right -->
+
+          <!-- start space  -->
+            <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="right" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+              <tr>
+                <td width="0" height="2" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                  <p style="padding-left: 19px;">&nbsp;</p>               
+                </td>
+              </tr>
+            </table>
+            <!-- end space  -->
+          
+
+            <!-- start content container -->
+            <table  width="365" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width-margin-right-15-2" id="align-left"> 
+               <tr>
+                  <td height="15"></td>
+               </tr>
+
+              <tr>
+                <td>
+
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Image Column right</singleline></a></span>
+                    </td>
+                  </tr>
+
+                   <tr>
+                    <td height="10"></td>
+                  </tr>  
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim</multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+
+             <tr>
+               <td height="15" ></td>
+             </tr>
+
+            </table>
+            <!-- end content container -->
+         </td>
+       </tr>
+        <!-- end right container -->
+          <tr>
+               <td height="15" ></td>
+          </tr>
+
+     </table>
+     <!-- end layout-3 container -->
+    
+   </td>
+ </tr>
+ <!-- end layout-3 wrapper -->
+
+ <!-- start head content tab --> 
+ <tr>
+   <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container"  bgcolor="#ffffff" style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+       <tr>
+         <td valign="mindle">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+             <tr>
+               <td  style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:bold; font-style:italic; text-align:left; padding-right:30px;">
+                 <singleline>PRODUCT&nbsp;GALLERY&nbsp;</singleline>
+               </td>
+               <!-- start tab color --> 
+               <td width="100%" valign="mindle" >
+                 <table width="100%" height="10" border="0" cellspacing="0" cellpadding="0" align="left" height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;">
+                   <tr>
+                     <td width="20"   height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;"></td>
+                     <td width="10%"  height="10" bgcolor="#1f668f" style="background-color:#1f668f;"></td>
+                     <td width="10%"  height="10" bgcolor="#3d82aa" style="background-color:#3683af;"></td>
+                     <td width="70%"  height="10" bgcolor="#3293cb" style="background-color:#2599db;"></td>
+                   </tr>
+                 </table>
+               </td>
+               <!-- end tab color --> 
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+ <!-- end head content tab --> 
+
+ <!-- start layout-4 wrapper -->
+<tr>
+ <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+      <!-- start layout-4 container -->
+      <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff"  style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+
+        <tr>
+          <td valign="top" >
+            <!-- start layout-4 Image Top Left -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left" >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image8-280x247.jpg" width="170" alt="image8-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td height="10"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Top Left -->
+
+           <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-4 Image Top Center -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3"  >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"  > 
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image9-280x247.jpg" width="170" alt="image9-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td height="10"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Top Center  -->
+
+          <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-4 Image Top Right  -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="right" class="full-width-non-margin-right-15-3" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left" >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image10-280x247.jpg" width="170" alt="image10-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td height="10"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Top Right -->
+
+          </td>
+        </tr>
+
+         <tr>
+          <td valign="top" >
+            <!-- start layout-4 Image Bottom Left -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3" >
+            <tr>
+              <td height="10"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"  >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image11-280x247.jpg" width="170" alt="image11-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Bottom Left -->
+
+           <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-4 Image Bottom Center -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15-3"  >
+            <tr>
+              <td height="10"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"> 
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image12-280x247.jpg" width="170" alt="image12-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Bottom Center -->
+
+          <!-- start space  -->
+          <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+            <tr>
+              <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                <p style="padding-left: 19px;">&nbsp;</p>               
+              </td>
+            </tr>
+          </table>
+          <!-- end space  -->
+
+            <!-- start layout-4 Image Bottom Right -->
+          <table width="170" border="0" cellspacing="0" cellpadding="0" align="right" class="full-width-non-margin-right-15-3" >
+            <tr>
+              <td height="10"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="left"  >
+                <a href="layout-all.html"><img class="image-100-percent" src="images/image13-280x247.jpg" width="170" alt="image13-280x247" style="display:block; max-width:170px; border-radius: 10px; background-clip: padding-box;" border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-4 Image Bottom Right -->
+
+          </td>
+        </tr>
+
+       
+
+      </table>
+      <!-- end layout-4 container -->
+   </td>
+</tr>
+<!-- end layout-4 wrapper -->
+
+<!-- start head content tab --> 
+ <tr>
+   <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff;" >
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container"  bgcolor="#ffffff" style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+      
+       <tr>
+         <td valign="mindle">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+             <tr>
+               <td  style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:bold; font-style:italic; text-align:left; padding-right:30px;">
+                 <singleline>RECOMMEND&nbsp;</singleline>
+               </td>
+               <!-- start tab color --> 
+               <td width="100%" valign="mindle" >
+                 <table width="100%" height="10" border="0" cellspacing="0" cellpadding="0" align="left" height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;">
+                   <tr>
+                     <td width="20"   height="10" bgcolor="#0e4e73" style="background-color:#0e4e73;"></td>
+                     <td width="10%"  height="10" bgcolor="#1f668f" style="background-color:#1f668f;"></td>
+                     <td width="10%"  height="10" bgcolor="#3d82aa" style="background-color:#3683af;"></td>
+                     <td width="70%"  height="10" bgcolor="#3293cb" style="background-color:#2599db;"></td>
+                   </tr>
+                 </table>
+               </td>
+               <!-- end tab color --> 
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+ <!-- end head content tab --> 
+
+<!-- start layout-5 wrapper -->
+ <tr>
+   <td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;">
+
+     <!-- start layout-5 container -->
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#ffffff" style="background-color: #ffffff; padding-left:20px; padding-right:20px;">
+        <!-- start space -->
+       <tr>
+         <td valign="top" width="100%">
+           
+          <!-- start layout-5  content-->
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td  width="100%" valign="top" align="center"  >
+                <a href="layout-all.html#"><img class="image-100-percent" src="images/image14-550x220.jpg" width="550" alt="550x220.jpg" style="display:block; max-width:550px; border-radius: 10px; background-clip: padding-box; " border="0" hspace="0" vspace="0"/></a>
+
+              </td>
+            </tr>
+
+             <tr>
+              <td height="10"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td  style="font-size: 18px; line-height: 25px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left;">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Image Column One <span style="color:#f0d41b; font-size:18px; font-weight: bold;">&#9733; &#9733; &#9733; &#9733; &#9734;</span></singleline></a></span>
+                    </td>
+                  </tr>
+
+                   <tr>
+                    <td height="10"></td>
+                  </tr>  
+
+                  <tr>
+                    <td  style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#7f7f7f; font-weight:normal; text-align:left; ">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do <span style="color: #3293cb; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-style:italic; font-weight: bold;">eimodtempor</a></span> incididunt utlabore etdolore magna aliqua. Ut enim minim Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do</multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-5 content -->
+         
+         </td>
+       </tr>
+
+        <tr>
+         <td  height="15" ></td>
+       </tr>
+
+     </table>
+     <!-- end layout-5 container -->
+
+   </td>
+ </tr>
+ <!-- start layout-5 wrapper -->
+
+
+
+<!-- start layout-6 wrapper -->
+ <tr>
+   <td align="center" valign="top" bgcolor="#0e526e" style="background-color: #0e526e;" >
+     
+     <!-- start layout-6 container -->
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#0e526e" style="background-color: #0e526e; padding-left:20px; padding-right:20px;">
+        <tr>
+          <td height="15"></td>
+        </tr>
+       
+       <tr>
+         <td valign="top">
+          <!-- start layout-6 content left -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td valign="top" style="padding-right:15px;" >
+                <img src="images/icon-date.png" width="100" alt="icon-date-100" style="display:block; max-width:100px;" border="0" hspace="0" vspace="0"/>
+                 
+              </td>
+              <td width="10"></td>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#ffffff; font-weight:normal; text-align:left; ">
+                        <span style="color: #ffffff; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #ffffff; font-weight: bold;"><singleline><span style="color:#30c3a6; font-size:18px; font-weight: bold;">&#10010;</span> Available Now.<span style="color:#30c3a6; font-size:18px; font-weight: bold;">&#10010;</span></singleline></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#a8e0ff; font-weight:normal; text-align:left; padding-top:10px;">
+                  
+                  <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eimod tempor incididunt utlabore etdolore magna aliqua. Ut enim minim etdolore magna aliqua. Ut enim minim Lorem ipsum dolor sit amet </multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-6 content left -->
+
+          
+         </td>
+       </tr>
+
+       <tr>
+          <td  height="15" class="remove-479">
+                        
+          </td>
+       </tr>
+
+     </table>
+     <!-- end layout-6 container -->
+   </td>
+ </tr>
+ <!-- end layout-6 wrapper -->
+
+
+<!-- start layout-7 wrapper -->
+ <tr>
+   <td align="center" valign="top"  bgcolor="#0e2430" style="background-color: #0e2430;">
+     
+     <!-- start layout-7 container -->
+     <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container" bgcolor="#0e2430" style="background-color: #0e2430; padding-left:20px; padding-right:20px;">
+        <tr>
+          <td height="15"></td>
+        </tr>
+       
+       <tr>
+         <td valign="top">
+          <!-- start layout-7 content left -->
+          <table width="260" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-right-15" id="col-underline-blue" >
+            <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td valign="top" style="padding-right:15px;" >
+                <img src="images/icon-heart.png" width="48" alt="icon-bubble-48x47" style="max-width:48px;" border="0" hspace="0" vspace="0"/>
+                 
+              </td>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left" >
+                  <tr>
+                    <td style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left; ">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Services friendly</singleline></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#6fa0bc; font-weight:normal; text-align:left; padding-top:15px;">
+                  
+                  
+                   <multiline> Lorem ipsum dolor sit amet,consectetur adipisicing elit<br>
+                   <span style="color:#ff5454; font-size:18px; font-weight: bold;">&#10084; </span>&nbsp;Lorem ipsum dolor sit <br>
+                   <span style="color:#ff5454; font-size:18px; font-weight: bold;">&#10084; </span>&nbsp;Lorem ipsum dolor sit<br>
+                    incididunt utlabore etdolore</multiline>
+                  
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-7 content left -->
+         
+
+         
+            <!-- start space  -->
+            <table class="remove" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+              <tr>
+                <td width="0" height="2" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                  <p style="padding-left: 19px;">&nbsp;</p>               
+                </td>
+              </tr>
+            </table>
+            <!-- end space  -->
+          
+
+         
+          <!-- start layout-7 content right -->
+          <table width="260" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width-margin-left-15">
+             <tr>
+              <td height="15"></td>
+            </tr>
+            <tr>
+              <td valign="top" style="padding-right:15px;" >
+                <img src="images/icon-Option.png" width="48" alt="icon-Option-48x48" style="max-width:48px;" border="0" hspace="0" vspace="0"/>
+                 
+              </td>
+              <td>
+                <table border="0" cellspacing="0" cellpadding="0" align="left">
+                   <tr>
+                    <td style="font-size: 18px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#3293cb; font-weight:normal; text-align:left; ">
+                        <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"><singleline>Optimized for you</singleline></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#6fa0bc; font-weight:normal; text-align:left; padding-top:15px;">
+                  
+                   <multiline> Lorem ipsum dolor sit amet,consectetur adipisicing elit<br>
+                   <span style="color:#40d7a0; font-size:18px; font-weight: bold;">&#10004; </span>&nbsp;Lorem ipsum dolor sit <br>
+                   <span style="color:#40d7a0; font-size:18px; font-weight: bold;">&#10004; </span>&nbsp;Lorem ipsum dolor sit<br>
+                    incididunt utlabore etdolore</multiline>
+                    
+                    </td>
+                  </tr>
+               </table>
+              </td>
+            </tr>
+             <tr>
+              <td height="15"></td>
+            </tr>  
+          </table>
+          <!-- end layout-7 content right -->
+         </td>
+       </tr>
+
+       <tr>
+          <td  height="15" class="remove-479">&nbsp;
+                        
+          </td>
+       </tr>
+
+     </table>
+     <!-- end layout-7 container -->
+   </td>
+ </tr>
+ <!-- end layout-7 wrapper -->
+
+
+
+<!-- start layout-8 wrapper -->
+  <tr>
+    <td align="center" valign="top"  bgcolor="#0e526e" style="background-color: #0e526e;"  >
+
+        <!-- start layout-6 container -->
+        <table width="590"  align="center" border="0" cellspacing="0" cellpadding="0" class="container"  bgcolor="#0e526e" style="background-color: #0e526e; padding-left:20px; padding-right:20px;">
+          <tr>
+            <td  height="15" class="remove-479">&nbsp;
+                          
+            </td>
+          </tr>
+
+
+          <!-- start layout-8 content  -->
+          <tr>
+          <td valign="top" >
+            <table  border="0" cellspacing="0" cellpadding="0" align="left" class="full-width"  >
+              <tr>
+                <td height="15"></td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding-right:15px;" >
+                  <img src="images/face-85x76.png" width="85" alt="face-85x76" style="max-width:85px;" border="0" hspace="0" vspace="0"/>
+                   
+                </td>
+                <td>
+                  <table border="0" cellspacing="0" cellpadding="0" align="left" >
+
+                    <tr>
+                      <td style="font-size: 13px; line-height: 20px; font-style:italic; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#a8e0ff; font-weight:normal; text-align:left; ">
+                    
+                    <multiline>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eimod tempor incididunt utlabore etdolore magna aliqua. Ut enim minim Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eimod tempor.</multiline>
+                        
+                        
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="10"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#ffffff; font-weight:normal; text-align:right; ">
+                          <span style="color: #ffffff; font-style:italic; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #ffffff; font-weight: bold;">customer service  &raquo;</a></span>
+                      </td>
+                    </tr>
+                 </table>
+                </td>
+              </tr>
+              <tr>
+                <td height="15"></td>
+              </tr>  
+            </table>
+           
+          </td>
+         </tr>
+         <!-- end layout-8 content  -->
+  
+
+       </table>
+        <!-- end layout-8 container -->
+    </td>
+  </tr>
+<!-- end layout-8 wrapper -->
+
+
+ 
+
+<!-- start footer wrapper-->
+  <tr>
+    <td align="center" valign="top" bgcolor="#0e2430" style="background-color:#0e2430;">
+      
+      
+
+       <!--start footer  container -->
+        <table width="590" border="0" cellspacing="0" cellpadding="0" class="container">
+          <tr>
+            <td  height="30" >&nbsp;
+                          
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"  >
+              
+              <!-- start footer logo and unsubscribe -->
+                <table widht="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td valign="top" >
+                      <!--start logo -->
+                     <table width="200" border="0" align="left" cellpadding="0" cellspacing="0" class="container-footer1" >
+                       <tr>
+                          <td valign="top" align="center" >
+                            <table border="0" align="left" cellpadding="0" cellspacing="0" class="img-center" >
+                              <tr>
+                                <td >
+                                   <a href="layout-all.html#"><img src="images/logo-footer.png" width="136" style="display:block; max-width:136px; " alt="Logo-footer" border="0" hspace="0" vspace="0"/></a>
+                                </td>
+                              </tr>
+                            </table>
+                              
+                          </td>
+                       </tr>
+                        <tr>
+                         <td valign="top" align="center" style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#6fa0bc; font-weight:normal; text-align:left;" class="text-center">
+                            <multiline>Company Name 1234 Street Stage Post 12345<br>Mail Us : <span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;">info@youemail.com</a></span><br>Call Us : 001-1234-5678</multiline>
+                         </td>
+                       </tr>
+                       <tr>
+                        <td  height="15" >&nbsp;
+                                      
+                        </td>
+                      </tr>
+                      </table>
+                      <!--end logo -->
+  
+                      <!-- start space width 25px -->
+                      <table class="remove-479" width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                        <tr>
+                          <td width="0" height="3" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                            <p style="padding-left: 25px;">&nbsp;</p>               
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- end space width 25px -->
+
+                    <!-- start footer content -->
+                    <table width="60%"  border="0" align="right" cellpadding="0" cellspacing="0" class="container-footer2" >
+                       <tr>
+                        <td valign="top" height="15"></td>
+                      </tr>
+                      <tr>
+                         <!-- start unsubscribe content -->
+                         <td valign="top" >
+                          <table border="0" align="center" cellpadding="0" cellspacing="0" >
+                            <tr>
+                              <td align="center" style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#6fa0bc; font-weight:normal; text-align:left;" class="text-center">
+
+                                <div style="text-align:left;" class="text-center">
+                                  <multiline>You are receiving this message because you signed up to receive &nbsp;<span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;">yourdomain.com</a></span> newsletters. Click here to &nbsp;<unsubscribe ><span style="color: #3293cb; font-weight: bold;"><a href="layout-all.html#" style="text-decoration: none; color: #3293cb; font-weight: bold;"> unsubscribe </a></span></unsubscribe>&nbsp;or update preferences.</multiline>
+                         
+                                </div>
+
+                              </td>
+                            </tr>
+                          </table>
+                          
+                         </td>
+                         <!-- end unsubscribe content -->
+                      </tr>
+
+                      <tr>
+                        <td valign="top" height="15"></td>
+                      </tr>
+
+                       <tr>
+                        <td valign="top" align="left"  >
+                          <table  border="0"  align="left" cellpadding="0" cellspacing="0" class="container2">
+                            <tr>
+                              <td  height="50" align="center" valign="mindle"  id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-googleplus.png" width="35" alt="icon-googleplus" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px; " height="50" align="center" valign="mindle" id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-facebook.png" width="35" alt="icon-facebook" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px; " height="50" align="center" valign="mindle" id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-twitter.png" width="35" alt="icon-twitter" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                              <td  style="padding-left:20px;" height="50" align="center" valign="mindle"  id="clear-padding">
+                                <a href="layout-all.html#">
+                                  <img src="images/icon-youtube.png" width="35" alt="icon-youtube" style="max-width:35px;" border="0" hspace="0" vspace="0"/>                          
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- end footer content -->
+                </td>
+               </tr>
+             </table>
+            <!-- end footer logo and unsubscribe -->
+
+            </td>
+          </tr>
+
+          <tr>
+            <td  height="30" >&nbsp;
+                          
+            </td>
+          </tr>
+        </table>
+         <!--end footer  container -->
+    </td>
+  </tr>
+  <!-- end footer wrapper-->
+
+
+
+  <!-- start footer copy right -->
+  <tr>
+    <td align="center" valign="top" bgcolor="#001520" style="background-color:#001520; ">
+      <table width="580" border="0" cellspacing="0" cellpadding="0" class="container">
+        <tr>
+          <td height="10"></td>
+        </tr>
+        <tr>
+          <!-- start layout2 content -->
+           <td valign="top" style="font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif,Arial,Tahoma; color:#6fa0bc; font-weight:normal; text-align:center; " ><singleline>Your company here , all rights reserved 2013 © </singleline>
+           </td>
+           <!-- end layout2 content -->
+        </tr>
+
+        <tr>
+          <td height="10"> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+ <!-- end footer copy right -->
+
+
+</table>
+<!-- end 100% wrapper (white background) -->
+</body>
+</html>

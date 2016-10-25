@@ -1,0 +1,66 @@
+.glidecontentwrapper{
+position: relative; /* Do not change this value */
+width: 954px;
+height: 600px; /* Set height to be able to contain height of largest content shown*/
+margin:auto;
+overflow: hidden;
+}
+
+.colordot {
+	width:20px;
+	height:20px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin:0 3px;
+}
+
+.colorsqu {
+	width:20px;
+	height:20px;
+	margin:0 3px;
+}
+
+.glidecontent{ /*style for each glide content DIV within wrapper.*/
+position: absolute; /* Do not change this value */
+padding: 0;
+visibility: hidden;
+width: 954px;
+}
+/*
+ Total glidecontent width: 330px+10px+10px=350px
+	Or width of wrapper div itself (not counting wrapper border/padding)
+*/
+
+.glidecontenttoggler{ /*style for DIV used to contain toggler links. */
+width: 360px;
+margin: 20px auto 0;
+text-align: center; 
+}
+
+.glidecontenttoggler a{ /*style for every navigational link within toggler */
+display: -moz-inline-box;
+display: inline-block;
+color: #2e6ab1;
+padding: 0;
+margin-right: 3px;
+}
+
+.glidecontenttoggler a.selected{ /*style for selected page's toggler link. ".selected" class auto generated! */
+color: black;
+}
+
+.glidecontenttoggler a:hover{
+color: black;
+}
+
+.glidecontenttoggler a.toc{ /*style for individual toggler links (page 1, page 2, etc). ".toc" class auto generated! */
+}
+
+.glidecontenttoggler a.prev, .glidecontenttoggler a.next{ /*style for "prev" and "next" toggler links. ".prev" and ".next" classes auto generated! */
+}
+
+.glidecontenttoggler a.prev:hover, .glidecontenttoggler a.next:hover{
+background: #1A48A4;
+color: white;
+}

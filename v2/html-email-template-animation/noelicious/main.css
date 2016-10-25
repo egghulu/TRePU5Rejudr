@@ -1,0 +1,194 @@
+
+body {
+	margin:0;
+	background:#f7f7f7;
+}
+
+#header {
+	width:100%;
+	height:108px;
+	background:#f2f2f2;
+	border-top:2px solid #dad9d9;
+	border-bottom:2px solid #eff0f1;
+}
+
+
+.header_box {
+	width:990px;
+	height:108px;
+	margin:auto;
+	background:#f2f2f2 url(images/bg_header.jpg) no-repeat;
+	position:relative;
+}
+
+.header_logo {
+	width:80px;
+	height:80px;
+	background:url(Thumbnail.png) no-repeat;
+	position:absolute;
+	top:14px;
+	left:20px;
+}
+
+.header_title {
+	width:700px;
+	height:30px;
+	font-family:"Trebuchet MS",arial,serif;
+	font-size:20px;
+	color:#c1c1c1;
+	text-align:right;
+	position:relative;
+	left:265px;
+	top:70px;
+}
+
+#wrapper {
+	width:100%;
+	margin:auto;
+	background:#f7f7f7;
+}
+
+#container {
+	width:990px;
+	margin:auto;
+}
+
+.bg_comp {
+	width:100%;
+	height:108px;
+	background:url(images/bg_comp.jpg) repeat-x;
+	margin:10px 0 0 0;
+}
+
+.bg_comp_box {
+	width:990px;
+	height:108px;
+	margin:0 auto;
+}
+
+.bg_comp_left{
+	width:444px;
+	height:108px;
+	background:url(images/bg_campaign.jpg) no-repeat;
+	float:left;
+}
+
+.bg_comp_right{
+	width:350px;
+	height:108px;
+	background:url(images/bg_mailchimp.jpg) no-repeat;
+	float:right;
+}
+
+.bg_feature {
+	width:100%;
+	height:180px;
+	margin:0;
+	background:#fbfbfb;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #f2eff0;
+}
+
+.feature_box {
+	width:990px;
+	height:100px;
+	margin:0 auto;
+}
+
+.feature_box_1 {
+	width:205px;
+	height:90px;
+	color:#888888;
+	padding:10px 0 0 95px;
+	margin:40px 10px 0 23px;
+	background:url(images/i_mobileres.jpg) no-repeat 0 5px;
+	float:left;
+}
+
+.feature_box_2 {
+	width:205px;
+	height:90px;
+	color:#888888;
+	padding:10px 0 0 95px;
+	margin:40px 10px 0;
+	background:url(images/i_valid.jpg) no-repeat 0 5px;
+	float:left;
+}
+
+.feature_box_3 {
+	width:195px;
+	height:90px;
+	color:#888888;
+	padding:10px 0 0 105px;
+	margin:40px 10px 0 20px;
+	background:url(images/i_rate.jpg) no-repeat 0 5px;
+	float:left;
+}
+
+
+#row1{
+	width:990px; 
+	height:530px;
+}
+
+.sbox {
+	width:170px;
+	height:600px;
+	margin:10px 0 0;
+	overflow:hidden;
+	float:left;
+}
+
+.sbox_hidden {
+	width:170px;
+	height:500px;
+	overflow:hidden;
+}
+
+.sbox_num {
+	width:170px;
+	height:26px;
+	font-family:"Trebuchet MS",arial,serif;
+	font-size:13px;
+	color:#aaa;
+	text-align:center;
+	padding:10px 0 0;
+}
+
+.sbox_device {
+	width:170px;
+	height:50px;
+}
+
+.sbox_icon {
+	width:40px;
+	height:40px;
+	float:left;
+	margin-left:13px;
+}
+
+.mask,.mask_pc {
+	width:170px;
+	height:500px;
+	margin:auto;
+	overflow:hidden;
+	position:absolute;
+	background:url(images/mask.png) no-repeat 0 100%;
+}
+
+.link{
+	width:170px;
+	height:500px;
+	visibility:hidden;
+}
+
+
+.copyright {
+	width:560px;
+	height:70px;
+	font-family:arial,"Trebuchet MS",serif;
+	font-size:11px;
+	color:#b6c0c6;
+	text-align:center;
+	margin:15px auto 20px;
+}
