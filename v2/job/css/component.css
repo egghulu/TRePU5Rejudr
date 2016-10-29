@@ -1,14 +1,4 @@
 /*------------------------------------------------------------------
-Project:        HaNgan
-Author:         Crenoveative
-URL:            http://crenoveative.com/ 
-Version:        1.0.0
-Created:        23/05/2016
-Last change:    23/05/2015
--------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------
 * Table of Content
 * 1. Flex Video
 * 2. Bootstrap Override
@@ -1662,7 +1652,7 @@ body.modal-open,
     right: 34px;
     width: 16px;
     height: 16px;
-    background: url(http://crenoveative.com/envato/hangan/css/images/spinner.gif);
+    background: url(css/images/spinner.gif);
     background-size: 16px 16px;
     opacity: 0
 }
@@ -1760,7 +1750,7 @@ body.modal-open,
     right: 34px;
     width: 16px;
     height: 16px;
-    background: url(http://crenoveative.com/envato/hangan/css/images/spinner.gif);
+    background: url(css/images/spinner.gif);
     background-size: 16px 16px;
     opacity: 0
 }
@@ -3342,7 +3332,7 @@ body.modal-open,
 }
 
 .slick-loading .slick-list {
-    background: #fff url(http://crenoveative.com/envato/hangan/css/ajax-loader.gif) center center no-repeat
+    background: #fff url(css/ajax-loader.gif) center center no-repeat
 }
 
 
@@ -5750,7 +5740,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value=orange] {
     .ticker-container .ticker-caption {
         height: 100%;
         width: 150px;
-        background: url(http://crenoveative.com/envato/hangan/css/images/ticker-caption-bg.png)
+        background: url(css/images/ticker-caption-bg.png)
     }
     .ticker-container .ticker-caption p {
         text-align: left;

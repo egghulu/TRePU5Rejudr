@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/jquery.selectBoxIt.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href=paradise/font-awesome-4.5.0/css/font-awesome.min.css rel=stylesheet media=all>
+        <link href=paradise/css/plug.css rel=stylesheet media=all>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -45,38 +47,156 @@
         <section class="page-title">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <!-- <div class="col-sm-12">
                         <h1>Our Blog</h1>
-                    </div>
+                    </div> -->
+
+
+                    <style>
+                        .carousel-indicators {
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            width: 100%;
+                            bottom: auto;
+                            margin: auto;
+                            font-size: 0;
+                            cursor: e-resize;
+                            overflow-x: auto;
+                            text-align: left;
+                            padding: 10px 140px;
+                            overflow-y: hidden;
+                            white-space: nowrap;
+                            background: #2a2a2a;
+                        }
+
+                        .carousel-indicators .active {
+                            width: 120px;
+                            height: auto;
+                            border: 0;
+                            margin: 0 5px;
+                            background-color: transparent
+                        }
+
+
+                        .carousel-indicators li {
+                            padding: 0;
+                            width: 120px;
+                            border: 0;
+                            height: auto;
+                            margin: 0 5px;
+                            text-indent: 0;
+                            cursor: pointer;
+                            background: transparent;
+                            border: 3px solid #333331;
+                            -webkit-border-radius: 0;
+                            border-radius: 0;
+                            -webkit-transition: all .7s cubic-bezier(0.22,0.81,0.01,0.99);
+                            transition: all 1s cubic-bezier(0.22,0.81,0.01,0.99);
+                        }
+
+                        .carousel-indicators>li>img {
+                            width: 100%;
+                            display: block;
+                        }
+
+
+
+                    </style>
+
+                    <ol class="carousel-indicators col-sm-12">
+        <li data-slide-to=0 data-target=#x_013_img_thumbnail class=active><img alt=x_013_txt_thumbnail_01_sm src=paradise/images/in_th_029_01_sm.jpg>
+            <li data-slide-to=1 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_02_sm src=paradise/images/x_004_img_thumbnail_02_sm.jpg>
+                <li data-slide-to=2 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_03_sm src=paradise/images/in_th_029_02_sm.jpg>
+                    <li data-slide-to=3 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_04_sm src=paradise/images/in_th_023_01_sm.jpg></ol>
+
+
                 </div>
             </div>
         </section>
         <section class="main-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="background-color: #f2f4f1;">
                         <div class="posts">
-                            <article class="blog-post">
-                            
-                            <div class="text-editor">
-                                
+                            <article class="blog-post">                            
+                                <div class="text-editor">  
+
+
+                                <style type="text/css">
+
+                                    #x_013_img_thumbnail {
+                                        background: #000;
+                                        padding: 0 0 0 0;
+                                    }
+
+                                    .x_013_img_thumbnail_content_outer {
+                                        background: rgba(0, 0, 0, 0);
+                                    }
+
+                                    .x_013_img_thumbnail_control_button .carousel-control {
+                                        top: 44%;
+                                    }
+
+                                    .x_013_img_thumbnail_control_button .carousel-control.left {
+                                        left: auto;
+                                        right: auto; 
+                                    }
+
+                                    .x_013_img_thumbnail_control_button .carousel-control.right {
+                                        right: 0;
+                                    }
+
+                                </style>                       
+                                    
+                                    
+                                    <div class="carousel ps_slowSpeedy slide swipe_x thumb_scroll_x x_013_img_thumbnail_control_button x_013_img_thumbnail_indicators" data-duration=2000 data-interval=8000 data-pause=hover data-ride=carousel id=x_013_img_thumbnail>
+
+
+
+    <!-- <ol class=carousel-indicators>
+        <li data-slide-to=0 data-target=#x_013_img_thumbnail class=active><img alt=x_013_txt_thumbnail_01_sm src=paradise/images/in_th_029_01_sm.jpg>
+            <li data-slide-to=1 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_02_sm src=paradise/images/x_004_img_thumbnail_02_sm.jpg>
+                <li data-slide-to=2 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_03_sm src=paradise/images/in_th_029_02_sm.jpg>
+                    <li data-slide-to=3 data-target=#x_013_img_thumbnail><img alt=x_013_txt_thumbnail_04_sm src=paradise/images/in_th_023_01_sm.jpg></ol> -->
 
 
 
 
+    <div class=carousel-inner role=listbox>
+        <div class="item active"><img alt=x_013_txt_thumbnail_01 src=paradise/images/in_th_029_01.jpg>
+            <div class=x_013_img_thumbnail_content_outer>
+                <div class=x_013_img_thumbnail_content_inner>
+                    &nbsp;</div>
+            </div>
+        </div>
+        <div class=item><img alt=x_013_txt_thumbnail_02 src=paradise/images/fw_al_008_01.jpg>
+            <div class=x_013_img_thumbnail_content_outer>
+                <div class=x_013_img_thumbnail_content_inner>
+                    &nbsp;</div>
+            </div>
+        </div>
+        <div class=item><img alt=x_013_txt_thumbnail_03 src=paradise/images/in_th_029_02.jpg>
+            <div class=x_013_img_thumbnail_content_outer>
+                <div class=x_013_img_thumbnail_content_inner>
+                    &nbsp;</div>
+            </div>
+        </div>
+        <div class=item><img alt=x_013_txt_thumbnail_04 src=paradise/images/in_th_023_01.jpg>
+            <div class=x_013_img_thumbnail_content_outer>
+                <div class=x_013_img_thumbnail_content_inner>
+                    &nbsp;</div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <a href=#x_013_img_thumbnail class="carousel-control left" data-slide=prev role=button><span class="fa fa-angle-left"></span> </a><a href=#x_013_img_thumbnail class="carousel-control right" data-slide=next role=button><span class="fa fa-angle-right"></span></a></div>
 
-                                
-                                
-                                <figure>
-                                    <img src="content/blog-single.png" alt=""/>
-                                    <figcaption>Lollipop tiramisu tootsie roll jujubes I love I love wafer I love. Candy oat cake</figcaption>
-                                </figure>
 
-                            </div>
-                        </article>
+                                </div>
+                            </article>
 
                           
                         </div>
@@ -109,17 +229,19 @@
         </footer>
         
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/jquery.isotope.min.js"></script>
-        <script src="js/vendor/jquery.isotope.perfectmasonry.js"></script>
-        <script src="js/vendor/jquery.raty.min.js"></script>
-        <script src="js/vendor/jquery.flexslider.js"></script>
-        <script src="js/vendor/jquery.mousewheel.js"></script>
-        <script src="js/vendor/jquery.mCustomScrollbar.js"></script>
-        <script src="js/vendor/jquery.hoverdir.js"></script>
-        <script src="js/vendor/jquery.selectBoxIt.min.js"></script>
-        <script src="js/vendor/jquery.fancybox.pack.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/vendor/jquery.isotope.min.js"></script> -->
+        <!-- <script src="js/vendor/jquery.isotope.perfectmasonry.js"></script> -->
+        <!-- <script src="js/vendor/jquery.raty.min.js"></script> -->
+        <!-- <script src="js/vendor/jquery.flexslider.js"></script> -->
+        <!-- <script src="js/vendor/jquery.mousewheel.js"></script> -->
+        <!-- <script src="js/vendor/jquery.mCustomScrollbar.js"></script> -->
+        <!-- <script src="js/vendor/jquery.hoverdir.js"></script> -->
+        <!-- <script src="js/vendor/jquery.selectBoxIt.min.js"></script> -->
+        <!-- <script src="js/vendor/jquery.fancybox.pack.js"></script> -->
+        <script src=paradise/js/jquery.touchSwipe.js></script>
+        <script src=paradise/js/plugin.min.js></script>
+        <!-- <script src="js/main.js"></script> -->
     </body>
 </html>
