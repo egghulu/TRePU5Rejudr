@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html data-ng-app="creative" lang="en">
+<html data-ng-app="creativeSlider" lang="en">
 <head>
-    <title>Appestia app landing page Angular version by Phoenixcoded</title>
+    <title>Appestia app landing page Angular version by Agung</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -10,9 +10,9 @@
     <![endif]-->
 
     <meta charset="utf-8">
-    <meta name="description" content="Appestia App Landing Page Template by Phoenixcoded">
+    <meta name="description" content="Appestia App Landing Page Template by Agung">
     <meta name="keywords" content="appestia, Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="Phoenixcoded">
+    <meta name="author" content="Agung">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -62,7 +62,7 @@
     </div>
 </div>
 <!--Nav Menu Starts-->
-<nav id="navbar" class="navbar default">
+<nav class="navbar default">
     <div class="container mob-logo">
         <div class="navbar-header col-sm-2 tablet-logo">
             <button type="button" class="navbar-toggle mob-menu" data-toggle="collapse" data-target="#myNavbar">
@@ -76,7 +76,7 @@
                                 <i class="fa fa-bars"></i>
                             </span>
             </div>
-            <a href="http://appestia-angular.phoenixcoded.com/creative/index-cloud.html" class="brand-logo">
+            <a href="index-slider-android.html" class="brand-logo">
 
                 <img src="assets/images/logo.png" alt="appestia logo">
 
@@ -85,32 +85,235 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
                 <li class="active">
-                    <a href="index.html#home" data-du-smooth-scroll data-du-scrollspy>Home</a>
+                    <a href="index-slider-android.html#home" data-du-smooth-scroll data-du-scrollspy>Home</a>
                 </li>
                 <li>
-                    <a href="index.html#magical_feature" data-du-smooth-scroll data-du-scrollspy>Features</a>
+                    <a href="index-slider-android.html#magical_feature" data-du-smooth-scroll data-du-scrollspy>Features</a>
                 </li>
                 <li>
-                    <a href="index.html#why_us" data-du-smooth-scroll data-du-scrollspy>Whyus</a>
+                    <a href="index-slider-android.html#why_us" data-du-smooth-scroll data-du-scrollspy>Whyus</a>
                 </li>
                 <li>
-                    <a href="index.html#screenshots" data-du-smooth-scroll data-du-scrollspy>Screenshots</a>
+                    <a href="index-slider-android.html#screenshots" data-du-smooth-scroll data-du-scrollspy>Screenshots</a>
                 </li>
                 <li>
-                    <a href="index.html#testimonials" data-du-smooth-scroll data-du-scrollspy>Testimonials</a>
+                    <a href="index-slider-android.html#testimonials" data-du-smooth-scroll data-du-scrollspy>Testimonials</a>
                 </li>
 
                 <li>
-                    <a href="index.html#packages" data-du-smooth-scroll data-du-scrollspy>Packages</a>
+                    <a href="index-slider-android.html#packages" data-du-smooth-scroll data-du-scrollspy>Packages</a>
                 </li>
                 <li>
-                    <a href="index.html#contact" data-du-smooth-scroll data-du-scrollspy>Contactus</a>
+                    <a href="index-slider-android.html#contact" data-du-smooth-scroll data-du-scrollspy>Contactus</a>
+                </li>
+                <li>
+                    <a href="index-slider-android.html#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="nav-link sidebar-login mob_connection">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="index-slider-android.html#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="text-smaller sidebar-signup mob_connection">
+                        Signup
+                    </a>
+                </li>
+                <li>
+                    <div class="mobile-sidebar-none">
+                                    <span class="sidebar-btn btn fa-bar-hide" data-action="toggle" data-side="right" data-ng-click="ShowHide()">
+                                        <i class="fa fa-bars"></i>
+                                    </span>
+                    </div>
                 </li>
             </ul>
         </div>
 
     </div>
 </nav>
+<!--Sidebar-->
+<div class="sidebars " >
+    <div class="sidebar right offcanvas-nav " id="myDIV" style="right:-370px;">
+        <div class="sidebar-head nav-head" >
+            <div class="pt20">
+                <a id="logo-container" href="index-slider-android.html" class="brand-logo">
+
+                    <img class="img img-responsive sidebar-logo" src="assets/images/logo.png" alt="appestia logo">
+
+                </a>
+                <div>
+                                <span class="sidebar-btn sidebar-close-btn fa-bar-show" data-action="toggle" data-side="right" data-ng-click="ShowHide()">
+                                    <i class="fa fa-times"></i>
+                                </span>
+                </div>
+            </div>
+            <div class="sidebar-search">
+                <form class="form-material">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="txtsearch" required="">
+                        <span class="form-bar"></span>
+                        <label class="float-label" for="txtsearch">Search</label>
+                        <i class="fa fa-search search-icon"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="cd-stretchy-nav add-content {{newClass}}"  >
+
+                <div class="{{LoginClass}}">
+                    <a href="index-slider-android.html#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="nav-link sidebar-login" data-ng-click="openLoginModel()" >Login</a>
+                    <a href="index-slider-android.html#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="text-smaller text-warning sidebar-signup" data-ng-click="openSignUpModel()">Signup</a>
+
+                </div>
+
+                <a class="cd-nav-trigger "  data-ng-click="ShowSocialBtn()" href="index-slider-android.html#">
+                    <span aria-hidden="true" ></span>
+                </a>
+
+                <ul class="{{className}}">
+
+                    <li class="fb"><a href="index-slider-android.html#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twt"><a href="index-slider-android.html#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="skype"><a href="index-slider-android.html#"><i class="fa fa-skype"></i></a></li>
+                    <li class="l_in"><a href="index-slider-android.html#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+
+                <span aria-hidden="true" class="stretchy-nav-bg"></span>
+
+            </div>
+        </div>
+        <div id="side-scroll" class="nav-body sidebar-body" >
+            <div class="overflow" data-scrollable>
+                <div class="row sidebar-download-btn" >
+                    <div class="col-md-6 col-sm-6 side-app">
+                        <a class="btn btn-primary common-btn colored-button float-button-light" data-angular-ripple>
+                            <i class="fa fa-cloud-download mr5"></i> App Store
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <a class="btn btn-primary common-btn colored-button float-button-light" data-angular-ripple>
+                            <i class="fa fa-cloud-download mr5"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div data-uib-accordion  data-close-others="oneAtATime">
+                        <div data-uib-accordion-group class="panel-default" data-is-open="status.isFirstClose3">
+                            <div data-uib-accordion-heading>
+                                <i class="fa fa-caret-right"></i>
+                                Lorem Message
+                                <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-up': status.isFirstClose3, 'glyphicon-chevron-down': !status.isFirstClose3}"></i>
+                            </div>
+                            <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                        </div>
+
+                        <div data-uib-accordion-group class="panel-default" data-is-open="status.isFirstClose4">
+                            <div data-uib-accordion-heading>
+                                <i class="fa fa-caret-right"></i>
+                                Lorem Message
+                                <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-up': status.isFirstClose4, 'glyphicon-chevron-down': !status.isFirstClose4}"></i>
+                            </div>
+                            <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <form name="outerForm" class="tab-form-demo sidebar-body-white">
+                        <div data-uib-tabset data-active="activeForm" data-justified="true">
+                            <div data-uib-tab data-index="0" data-heading="Flicker">
+                                <div id="flicker" class="in active">
+                                    <div class="col-md-12 no-padding feature-right-gallery sidebar-body-white">
+                                        <div class="row">
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-1.jpg" alt="person1">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="person2">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-3.jpg" alt="person3">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="person4">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-1.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-4.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-3.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="index-slider-android.html" data-lightbox="example-set">
+                                                    <img src="assets/images/team-4.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-uib-tab data-index="1" data-heading="Blog">
+                                <div id="blog" class="sidebar-body-white">
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-4.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Saturday, April 01:13 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-2.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Monday, May 02:03 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-1.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Thursday, May 03:30 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--End of sidebar-->
 
 <!--Nav Menu Ends-->
@@ -119,14 +322,12 @@
 
 <header id="home">
 
-    <section id="index-banner" data-parallax-background class="parallax-img" data-parallax-ratio="0.2" style="background-image: url(assets/images/home-bg2.jpg);" >
+    <section id="index-banner" data-backstretch data-backstretch-images="images" data-backstretch-duration="5000" data-backstretch-fade="1">
 
         <div class="bg-opacity-layer"></div>
 
-        <!--Cloud Section-->
-        <div data-ng-view class="view-frame" ></div>
-        <!--Cloud Section End-->
-        <div id="header" class="home-center" data-banner>
+
+        <div id="header"  data-slider-banner>
             <div class="container text-center">
                 <h1>Appestia</h1>
                 <p class="mt30">
@@ -134,7 +335,7 @@
                 </p>
                 <div class="row text-center">
                     <div class="col-md-7 hidden-xs hidden-sm not-visible " data-when-visible="animateElementIn"  >
-                        <img class="img img-responsive" src="assets/images/home_mob.png" alt="Home-Mobile">
+                        <img class="img img-responsive" src="assets/images/android/home_mob.png" alt="Home-Mobile">
                     </div>
 
                     <div class="col-md-5">
@@ -326,7 +527,7 @@
             <div class="col-sm-12 video-img-block mb20">
                 <img class="img img-responsive" src="assets/images/video-bg.jpg" alt="Video Background" />
                 <div class="video-play-icon">
-                    <a id="video" class="video" title="Video Presentation" href="https://player.vimeo.com/video/61373732?color=ff0179&amp;title=0&amp;byline=0&amp;portrait=0">
+                    <a class="video" title="Video Presentation" href="https://player.vimeo.com/video/61373732?color=ff0179&amp;title=0&amp;byline=0&amp;portrait=0">
                         <i class="fa fa-play icon-color"></i>
 
                     </a>
@@ -353,28 +554,28 @@
                     </strong>
                 </div>
                 <h4 class="circle-txt">Line Of Code</h4>
-                <a href="index.html#"  class=" btn circle-user">
+                <a href="index-slider-android.html#"  class=" btn circle-user">
                     <i  data-uib-tooltip="Line Of Code" data-tooltip-placement="bottom" class="fa fa-code"></i>
                 </a>
             </div>
             <div class="col-md-3 col-sm-3 wow zoomIn animated mob-circle" data-wow-duration="2s">
                 <div id="circle2"><strong><span class="counter count CounterS"  style="display: inline-block;" data-count-to=100 data-value=0 data-duration="0.5"></span>k</strong></div>
                 <h4 class="circle-txt">Happy User</h4>
-                <a href="index.html#" class="btn circle-user">
+                <a href="index-slider-android.html#" class="btn circle-user">
                     <i  data-tooltip-placement="bottom" data-uib-tooltip="Happy User" class="fa fa-user"></i>
                 </a>
             </div>
             <div class="col-md-3 col-sm-3 wow zoomIn animated mob-circle" data-wow-duration="2s">
                 <div id="circle3"><strong><span class="counter count CounterS"  style="display: inline-block;" data-count-to-comma=1,100 data-value=0 data-duration="0.5"></span>+</strong></div>
                 <h4 class="circle-txt">Downloads</h4>
-                <a href="index.html#" class="btn circle-user">
+                <a href="index-slider-android.html#" class="btn circle-user">
                     <i  data-tooltip-placement="bottom" data-uib-tooltip="Downloads" class="fa fa-cloud-download"></i>
                 </a>
             </div>
             <div class="col-md-3 col-sm-3 wow zoomIn animated mob-circle" data-wow-duration="2s">
                 <div id="circle4"><strong><span class="counter count CounterS"  style="display: inline-block;" data-count-to=4.5 data-value=0 data-duration="0.5"></span></strong></div>
                 <h4 class="circle-txt">App Rates</h4>
-                <a href="index.html#" class="btn circle-user">
+                <a href="index-slider-android.html#" class="btn circle-user">
                     <i  data-tooltip-placement="bottom" data-uib-tooltip="App Rates" class="fa fa-star"></i>
                 </a>
             </div>
@@ -391,8 +592,8 @@
         <div class="row valign-wrapper set-wrapper">
             <div class="col-md-6">
                 <div class="choose_phone hidden-xs hidden-sm">
-                    <img class="img img-responsive phone1" src="assets/images/why_us-1.png" alt="Phone1" />
-                    <img class="img img-responsive phone2 not-visible" data-when-visible="animateElementIn"  src="assets/images/why_us-2.png" alt="Phone1"  />
+                    <img class="img img-responsive phone1" src="assets/images/android/amazing-features1.png" alt="Phone1" />
+                    <img class="img img-responsive phone2 not-visible" data-when-visible="animateElementIn"  src="assets/images/android/amazing-features2.png" alt="Phone1"  />
                 </div>
             </div>
             <div class="col-md-6 choose_us_txt">
@@ -442,7 +643,7 @@
     <div class="container">
         <div class="owl-main-section">
             <div class="ss-phone hidden-xs hidden-sm">
-                <img src="assets/images/iphone.png" alt="iphone schreenshot background">
+                <img src="assets/images/android/screen-shot.png" alt="iphone schreenshot background">
             </div>
         </div>
         <!-- Screenshots -->
@@ -590,10 +791,10 @@
                     <div class="team-name"><h4>John Doe</h4></div>
                     <div class="team-position"><p>Chief Manager</p></div>
                     <ul class="team-socials">
-                        <li class="fb"><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="twt"><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="skype"><a href="index.html#"><i class="fa fa-skype"></i></a></li>
-                        <li class="l_in"><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="fb"><a href="index-slider-android.html#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twt"><a href="index-slider-android.html#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="skype"><a href="index-slider-android.html#"><i class="fa fa-skype"></i></a></li>
+                        <li class="l_in"><a href="index-slider-android.html#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -603,10 +804,10 @@
                     <div class="team-name"><h4>Jane Doe</h4></div>
                     <div class="team-position"><p>General Manager</p></div>
                     <ul class="team-socials">
-                        <li class="fb"><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="twt"><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="skype"><a href="index.html#"><i class="fa fa-skype"></i></a></li>
-                        <li class="l_in"><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="fb"><a href="index-slider-android.html#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twt"><a href="index-slider-android.html#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="skype"><a href="index-slider-android.html#"><i class="fa fa-skype"></i></a></li>
+                        <li class="l_in"><a href="index-slider-android.html#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -616,10 +817,10 @@
                     <div class="team-name"><h4>Peter Doe</h4></div>
                     <div class="team-position"><p>Head Accountant</p></div>
                     <ul class="team-socials">
-                        <li class="fb"><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="twt"><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="skype"><a href="index.html#"><i class="fa fa-skype"></i></a></li>
-                        <li class="l_in"><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="fb"><a href="index-slider-android.html#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twt"><a href="index-slider-android.html#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="skype"><a href="index-slider-android.html#"><i class="fa fa-skype"></i></a></li>
+                        <li class="l_in"><a href="index-slider-android.html#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -629,10 +830,10 @@
                     <div class="team-name"><h4>Luke Doe</h4></div>
                     <div class="team-position"><p>Graphic Designer</p></div>
                     <ul class="team-socials">
-                        <li class="fb"><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="twt"><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="skype"><a href="index.html#"><i class="fa fa-skype"></i></a></li>
-                        <li class="l_in"><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="fb"><a href="index-slider-android.html#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twt"><a href="index-slider-android.html#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="skype"><a href="index-slider-android.html#"><i class="fa fa-skype"></i></a></li>
+                        <li class="l_in"><a href="index-slider-android.html#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -769,7 +970,7 @@
 
 <section class="twitter-main" id="tweet">
     <div class="container text-center">
-        <h2 class="mb40">Tweet @ <span class="bolder">Phoenixcoded</span></h2>
+        <h2 class="mb40">Tweet @ <span class="bolder">Agung</span></h2>
     </div>
     <div class="container">
         <div class="tweet text-center"></div>
@@ -914,7 +1115,7 @@
                     </div>
 
                     <div class="form-group set-submit-box">
-                        <button id="submit_contact" type="button" class="btn btn-primary submit_contact common-btn colored-button float-button-light  pull-right" data-angular-ripple data-ng-click="send_form()">Submit <i class="fa fa-paper-plane ml5" aria-hidden="true" ></i></button>
+                        <button type="button" class="btn btn-primary submit_contact common-btn colored-button float-button-light  pull-right" data-angular-ripple data-ng-click="send_form()">Submit <i class="fa fa-paper-plane ml5" aria-hidden="true" ></i></button>
                     </div>
                 </form>
             </div>
@@ -981,17 +1182,17 @@
                             <h2 class="icon-color">Login</h2>
                         </div>
                         <div class="form-group mt20">
-                            <input title="user name" type="text" class="form-control" required="" data-ng-model="lUname" id="txtuname">
+                            <input type="text" class="form-control" required="" data-ng-model="lUname" id="txtuname">
                             <span class="form-bar"></span>
                             <label class="float-label" for="txtuname">Enter User-name</label>
                         </div>
                         <div class="form-group mt20">
-                            <input title="Password" type="password" class="form-control" required="" data-ng-model="lPsw" id="txtpassword">
+                            <input type="password" class="form-control" required="" data-ng-model="lPsw" id="txtpassword">
                             <span class="form-bar"></span>
                             <label class="float-label" for="txtpassword">Enter Password</label>
                         </div>
                         <div class="form-group text-right">
-                            <a href="index.html#">Forgot Password?</a>
+                            <a href="index-slider-android.html#">Forgot Password?</a>
                         </div>
                         <div class="clearfix">
 
@@ -1001,7 +1202,7 @@
                         </div>
                         <!-- Switching forms (Fake nav tab) -->
                         <div class="row mr0 ml0">
-                            <div class="form-switch pull-right">Do you wish to register for a <a href="index.html#form-1"> New account? </a></div>
+                            <div class="form-switch pull-right">Do you wish to register for a <a href="index-slider-android.html#form-1"> New account? </a></div>
                         </div>
                     </form>
                     <!-- Sign up form -->
@@ -1012,26 +1213,26 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mt20">
-                                    <input title="user name" type="text" class="form-control" required="" data-ng-model="SUname" id="txtname">
+                                    <input type="text" class="form-control" required="" data-ng-model="SUname" id="txtname">
                                     <span class="form-bar"></span>
                                     <label class="float-label" for="txtname">Enter User-Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group mt20">
-                                    <input title="Email" type="text" class="form-control" required="" data-ng-model="SEmail" id="txtemail">
+                                    <input type="text" class="form-control" required="" data-ng-model="SEmail" id="txtemail">
                                     <span class="form-bar"></span>
                                     <label class="float-label" for="txtemail">Enter E-mail_ID</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group sign-pw">
-                            <input title="Password" type="password" class="form-control" required="" data-ng-model="SPsw" id="txtpass">
+                            <input type="password" class="form-control" required="" data-ng-model="SPsw" id="txtpass">
                             <span class="form-bar"></span>
                             <label class="float-label" for="txtpass">Enter Password</label>
                         </div>
                         <div class="form-group">
-                            <input title="Confirm Password" type="password" class="form-control" required="" data-ng-model="SCPsw" id="txtconfirmpass">
+                            <input type="password" class="form-control" required="" data-ng-model="SCPsw" id="txtconfirmpass">
                             <span class="form-bar"></span>
                             <label class="float-label" for="txtconfirmpass">Confirm Password</label>
                         </div>
@@ -1043,14 +1244,14 @@
                         </div>
                         <!-- Switching forms (Fake nav tab) -->
                         <div class="row mr0 ml0">
-                            <div class="form-switch pull-right">Already have an account? <a href="index.html#form-2" >Sign in</a></div>
+                            <div class="form-switch pull-right">Already have an account? <a href="index-slider-android.html#form-2" >Sign in</a></div>
                         </div>
                     </form>
                 </div>
                 <!-- Hidden real nav tabs -->
                 <ul class="nav-tabs hidden">
-                    <li id="form-1"><a data-ng-click="OpenForm1()" href="index.html#signup-form" data-toggle="tab">Sign up</a></li>
-                    <li id="form-2"><a data-ng-click="OpenForm2()" href="index.html#signin-form" data-toggle="tab">Sign in</a></li>
+                    <li id="form-1"><a data-ng-click="OpenForm1()" href="index-slider-android.html#signup-form" data-toggle="tab">Sign up</a></li>
+                    <li id="form-2"><a data-ng-click="OpenForm2()" href="index-slider-android.html#signin-form" data-toggle="tab">Sign in</a></li>
                 </ul>
             </div>
         </div>
@@ -1133,13 +1334,16 @@
 <script src="assets/angularJS/angular-scroll-animate.min.js"></script>
 
 <!-- Module -->
-<script src="assets/modules/module.js" ></script>
+<script src="assets/modules/SliderModule.js" ></script>
 
 <!-- Controller -->
 <script src="assets/controllers/controller.js" ></script>
 
 <!-- bottom to top Scrolling -->
 <script src="assets/angularJS/angular-backtop.min.js" ></script>
+
+<!-- ng-backstretch.min.js -->
+<script src="assets/angularJS/ng-backstretch.min.js" ></script>
 
 <!-- ui-bootstrap-tpls-2.0.2.js -->
 <script src="assets/angularJS/ui-bootstrap-tpls-2.0.2.min.js" ></script>

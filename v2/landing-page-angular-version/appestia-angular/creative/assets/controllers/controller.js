@@ -101,7 +101,7 @@ app.controller('MyController', function ($scope,$document, $anchorScroll,$window
             if(angular.element('.tweet').length!=0){
         
             	angular.element('.tweet').twittie({
-            		username: 'phoenixcoded',
+            		username: 'Agung',
             		dateFormat: '%b. %d, %Y',
             		template: '<div class="circle mb20">{{avatar}}</div><p>{{tweet}}</p> <time class="date">{{date}}</time>',
             		count: 10
